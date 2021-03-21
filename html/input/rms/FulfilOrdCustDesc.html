@@ -1,0 +1,726 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/FulfilOrdCustDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This object is used to communicate customer details related to a customer order 
+			fulfillment request from OMS to RMS and SIM.
+		</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#FulfilOrdCustDesc'>
+                        <font>FulfilOrdCustDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#LocOfFulfilOrdCustDesc'>
+                          <font>LocOfFulfilOrdCustDesc</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:FulfilOrdCustDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='FulfilOrdCustDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for FulfilOrdCustDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>customer_no</td>
+                          <td halign='left'>varchar214</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the number that uniquely identifies the customer in OMS.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>customer_no</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>14</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates the number that uniquely identifies the customer in OMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_first_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the first name for the delivery address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_first_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the first name for the delivery address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_phonetic_first</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic first name for the delivery address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_phonetic_first</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the phonetic first name for the delivery address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_last_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the last name for the delivery address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_last_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the last name for the delivery address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_phonetic_last</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic last name for the delivery address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_phonetic_last</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the phonetic last name for the delivery address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_preferred_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the preferred name for the delivery address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_preferred_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the preferred name for the delivery address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_company_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the company name for the delivery address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_company_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the company name for the delivery address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_add1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>First line of the delivery address for the customer.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_add1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>First line of the delivery address for the customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_add2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Second line of the delivery address for the customer.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_add2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Second line of the delivery address for the customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_add3</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Third line of the delivery address for the customer.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_add3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Third line of the delivery address for the customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_county</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>County portion of the delivery address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_county</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>County portion of the delivery address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>City portion of the delivery address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_city</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>City portion of the delivery address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>State portion of the delivery address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_state</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>State portion of the delivery address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Country portion of the delivery address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_country_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Country portion of the delivery address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_post</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Postal code portion of the delivery address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_post</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Postal code portion of the delivery address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_jurisdiction</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Identifies the jurisdiction code for the delivery country-state relationship.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_jurisdiction</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Identifies the jurisdiction code for the delivery country-state relationship.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_phone</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the delivery phone number.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>deliver_phone</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the delivery phone number.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deliver_email</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the delivery email.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_first_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the first name for the billing address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_first_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the first name for the billing address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_phonetic_first</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic first name for the billing address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_phonetic_first</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the phonetic first name for the billing address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_last_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the last name for the billing address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_last_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the last name for the billing address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_phonetic_last</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic last name for the billing address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_phonetic_last</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the phonetic last name for the billing address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_preferred_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the preferred name for the billing address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_preferred_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the preferred name for the billing address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_company_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the company name for the billing address on the order.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_company_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the company name for the billing address on the order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_add1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>First line of the billing address for the customer.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_add1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>First line of the billing address for the customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_add2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Second line of the billing address for the customer.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_add2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Second line of the billing address for the customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_add3</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Third line of the billing address for the customer.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_add3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Third line of the billing address for the customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_county</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>County portion of the billing address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_county</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>County portion of the billing address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>City portion of the billing address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_city</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>City portion of the billing address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>State portion of the billing address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_state</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>State portion of the billing address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Country portion of the billing address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_country_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Country portion of the billing address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_post</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Postal code portion of the billing address.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_post</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Postal code portion of the billing address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_jurisdiction</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Identifies the jurisdiction code for the billing country-state relationship.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_jurisdiction</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Identifies the jurisdiction code for the billing country-state relationship.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_phone</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the billing phone number.</td>
+                          <td halign='left'>ordcust</td>
+                          <td halign='left'>bill_phone</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains the billing phone number.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_email</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the billing email.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#LocOfFulfilOrdCustDesc'>
+                              <font color='red'>LocOfFulfilOrdCustDesc:LocOfFulfilOrdCustDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of localization extension.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:LocOfFulfilOrdCustDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='LocOfFulfilOrdCustDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for LocOfFulfilOrdCustDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#BrFulfilOrdCustDesc'>
+                              <font color='red'>BrFulfilOrdCustDesc:BrFulfilOrdCustDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>It's a referenced element. For
+							detailed description, please refer referenced element doc.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

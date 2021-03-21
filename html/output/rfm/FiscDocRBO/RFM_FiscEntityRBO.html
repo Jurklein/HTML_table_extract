@@ -1,0 +1,728 @@
+<html>
+ <head>
+  <title>
+   RFM_FiscEntityRBO
+  </title>
+ </head>
+ <body>
+  <table border="1" cellpadding="3" cellspacing="0" data-name="FiscEntityRBO" width="100%">
+   <thead data-theadtype="xsd_thead_type">
+    <tr bgcolor="#D0D0D0">
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Name
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Data Type
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Min Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Max Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Description
+     </th>
+     <th align="left" colspan="6">
+      Application: RFM
+     </th>
+    </tr>
+    <tr bgcolor="#B0C4DE">
+     <th align="left">
+      Table
+     </th>
+     <th align="left">
+      Column Name
+     </th>
+     <th align="left">
+      Data Type
+     </th>
+     <th align="left">
+      Data Length
+     </th>
+     <th align="left">
+      Column Required?
+     </th>
+     <th align="left">
+      Application Description
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td halign="left">
+      <a href="#AddrRBO">
+       <font color="red">
+        AddrRBO:AddrRBO
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       1
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Description is not available.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#EcoClassCd">
+       <font color="red">
+        EcoClassCd
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Indicates the National economic
+							classification code.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#DiffTaxRegime">
+       <font color="red">
+        DiffTaxRegime
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Indicates the Tax Regime of a Supplier which will enable to have a 
+							reduction in tax basis amount.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      entity_code
+     </td>
+     <td halign="left">
+      varchar2250
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Legal Entity Code.
+     </td>
+     <td halign="left">
+      V_FISCAL_ATTRIBUTES
+     </td>
+     <td halign="left">
+      KEY_VALUE_1
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      10
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      If the transaction source is a location then it will be a location id else if it is a supplier then it will be a supplier id.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      entity_type
+     </td>
+     <td halign="left">
+      varchar2250
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Entity Type.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No Direct column mapping in RFM
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      legal_name
+     </td>
+     <td halign="left">
+      varchar2500
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Entity's legal Name.
+     </td>
+     <td halign="left">
+      sups,wh,store,partner
+     </td>
+     <td halign="left">
+      sup_name_secondary,wh_name_secondary,store_name_secondary,partner_name_secondary
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      250
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This field contains the description of the corresponding entity
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      fiscal_type
+     </td>
+     <td halign="left">
+      varchar2250
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Fiscal Type.
+     </td>
+     <td halign="left">
+      V_FISCAL_ATTRIBUTES
+     </td>
+     <td halign="left">
+      type
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      250
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This field will have 'S' if the type is 'J' else if it is 'F' then the value will be 'N'
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      is_simples_contributor
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates If the company is part of the
+							'SIMPLES' regime.Possible values are 'Y' or
+							'N'
+     </td>
+     <td halign="left">
+      V_BR_SUPS
+     </td>
+     <td halign="left">
+      SIMPLES_IND
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      250
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Contains the Brazil fiscal attribute for a supplier to indicate if the supplier is part of 'SIMPLES' regime.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      federal_tax_reg_id
+     </td>
+     <td halign="left">
+      varchar2250
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Federal Tax Registration
+							Number.
+     </td>
+     <td halign="left">
+      v_br_sups, v_br_store, v_br_wh, v_br_partner
+     </td>
+     <td halign="left">
+      cnpj
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      250
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the from entity's Federal Tax Registration number. In case of Brazil, it's the cnpj code. The from entity can be a supplier or a location (i.e. store, wh or external finisher).
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      is_rural_producer
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates whether an Entity is a Rural
+							Producer or not.Possible values are "Y" or
+							"N"
+     </td>
+     <td halign="left">
+      V_BR_SUPS
+     </td>
+     <td halign="left">
+      RURAL_PROD_IND
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      250
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Contains the Brazil fiscal attribute for a supplier to indicate if the entity is a rural producer.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      is_income_range_eligible
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates whether the Supplier's income range is 
+							eligible for a reduction in tax basis. Possible values 
+							are "Y" or "N"
+     </td>
+     <td halign="left">
+      V_BR_SUPS
+     </td>
+     <td halign="left">
+      IS_INCOME_RANGE_ELIGIBLE
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      250
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Contains the Brazil fiscal attribute for a supplier to indicate if the supplier's income range is eligible for a reduction in tax.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      is_distr_a_manufacturer
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates whether the Distributor is a Manufacturer also. Possible values 
+							are "Y" or "N"
+     </td>
+     <td halign="left">
+      V_BR_SUPS
+     </td>
+     <td halign="left">
+      IS_DISTR_A_MANUFACTURER
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      250
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the Brazil fiscal attribute for a supplier to indicate if a distributor is also a manufacturer.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      icms_simples_rate
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the ICMS rate of a supplier participating in SIMPLES regime.
+     </td>
+     <td halign="left">
+      V_BR_SUPS
+     </td>
+     <td halign="left">
+      ICMS_SIMPLES_RATE
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the Brazil fiscal attribute for a supplier to define an icms simples rate.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#TaxContributor">
+       <font color="red">
+        TaxContributor
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Description is not available.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#NameValPairRBO">
+       <font color="red">
+        NameValPairRBO:NameValPairRBO
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Represents 1 to many Name Value Pair objects.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      suframa
+     </td>
+     <td halign="left">
+      varchar2250
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates suframa
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+

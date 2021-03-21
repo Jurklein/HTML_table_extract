@@ -1,0 +1,763 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Store Inventory Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Store Inventory Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/ItemSupCtyDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#ItemSupCtyDesc'>
+                        <font>ItemSupCtyDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ItemSupCtyDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ItemSupCtyDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ItemSupCtyDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier for the item.</td>
+                          <td halign='left'>SUPPLIER_ITEM_COUNTRY, SUPPLIER_ITEM</td>
+                          <td halign='left'>ITEM_ID, ITEM_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the unique identifier for the item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier for the supplier.</td>
+                          <td halign='left'>SUPPLIER_ITEM_COUNTRY, SUPPLIER_ITEM</td>
+                          <td halign='left'>SUPPLIER_ID, SUPPLIER_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the unique identifier of the supplier for this item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>origin_country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The country where the item was manufactured or significantly altered.</td>
+                          <td halign='left'>SUPPLIER_ITEM_COUNTRY</td>
+                          <td halign='left'>COUNTRY_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the unique code of the country for the supplier that produces the item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_supp_ind</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates whether this supplier is the primary supplier for the item. Each item can have one and only one primary supplier.</td>
+                          <td halign='left'>N/A</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in SIM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_country_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates whether this country is the primary country for the item/supplier. Each item/supplier combination can have one and only one primary country.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the current corporate unit cost for the item from the supplier /origin country. This field is stored in the Supplier's currency.</td>
+                          <td halign='left'>SUPPLIER_ITEM_COUNTRY</td>
+                          <td halign='left'>UNIT_COST_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the unit cost of the item for that supplier in that country.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>lead_time</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the number of days that will elapse between the date an order is written and the delivery to the store or warehouse from the supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pickup_lead_time</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the time that will be taken to get the item from the supplier to the initial receiving location.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_pack_size</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the quantity that orders must be placed in multiples of for the supplier for the item.</td>
+                          <td halign='left'>SUPPLIER_ITEM_COUNTRY, ITEM</td>
+                          <td halign='left'>CASE_SIZE, CASE_SIZE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the default number of items within a case from the supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>inner_pack_size</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the break pack size for this item from the supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>round_lvl</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column is used to determine how order quantities will be rounded to case, layer and pallet.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>min_order_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the minimum quantity that can be ordered at one from the supplier for the item.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>max_order_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the maximum quantity that can be ordered at one from the supplier for the item.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>packing_method</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates whether the packing method for the item in the container is flat or hanging.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>default_uop</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the default unit of purchase for the item/supplier/country. Valid values include 'C'ase and 'P'allet.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ti</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Number of shipping units (cases) that make up one tier of the pallet. Multiply TI x HI to get total number of units (cases) in a Pallet.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>hi</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Number of tiers that make up a complete pallet. Multiply TI x HI to get total number of units (cases) in a Pallet.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cost_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A cost UOM is held to allow costs to be managed in a separate UOM to the standard UOM.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tolerance_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unit of tolerance for catch weight simple packs. Valid values are: 'A'-actual 'P' - percent.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>max_tolerance</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The maximum tolerance value for the catch weight simple pack.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>min_tolerance</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The minimum tolerance value for a catch weight simple pack.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>round_to_inner_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column will hold the Inner Rounding Threshold value. During rounding, this value is used to determine whether to round partial Inner quantities up or down. If the Inner-fraction in question is less than the Threshold proportion, it is rounded down; if not, it is rounded up.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>round_to_case_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column will hold the Case Rounding Threshold value. During rounding, this value is used to determine whether to round partial Case quantities up or down. If the Case-fraction in question is less than the Threshold proportion, it is rounded down; if not, it is rounded up.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>round_to_layer_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column will hold the Layer Rounding Threshold value. During rounding, this value is used to determine whether to round partial Layer quantities up or down. If the Layer-fraction in question is less than the Threshold proportion, it is rounded down; if not, it is rounded up.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>round_to_pallet_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column will hold the Pallet Rounding Threshold value. During rounding, this value is used to determine whether to round partial Pallet quantities up or down. If the Pallet -fraction in question is less than the Threshold proportion, it is rounded down; if not, it is rounded up.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_hier_type_1</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field identifies partner type of supplier hierarchy level 1.This field will always have the partner type S1 which indicates manufacturer..</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_hier_lvl_1</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Highest level of supplier hierarchy which is there to indicate a partner, such as a manufacturer, in the supply chain that gives rebates to the retailer.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_hier_type_2</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field identifies partner type of supplier hierarchy level 2 . This field will always have the partner type S2 which indicates distributor.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_hier_lvl_2</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Second highest level of supplier hierarchy which is there to indicate a partner, such as a distributor in the supply chain that gives rebates to the retailer.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_hier_type_3</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field identifies partner type of supplier hierarchy level 3.This field will always have the partner type S3 which indicates wholesaler.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_hier_lvl_3</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Third highest level of supplier hierarchy which is uder to indicate a partner, such as a wholesaler in the supply chain that gives rebates to the retailer.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>negotiated_item_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This will hold the supplier negotiated item cost for the primary delivery country of the item. Once a location is associated with the item, the primary locations negotiated item cost will be stored in this field.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>extended_base_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This will hold the extended base cost for the primary delivery country of the item. Once a location is associated with the item, the primary locations extended base cost will be stored in this field. Extended base cost is the cost inclusive of all the taxes that affect the WAC. In case of GTAX , Extended Base Cost = Base Cost + Non-recoverable taxes. In case of VAT, Extended Base Cost = Base Cost.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>inclusive_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This will hold the inclusive cost for the primary delivery country of the item. Once a location is associated with the item, the primary locations inclusive cost will be stored in this field. This cost will have both the recoverable and non recoverable taxes included. In case of GTAX , Inclusive Cost = Base Cost + Non-recoverable taxes + Recoverable Taxes. In case of VAT, Inclusive Cost = Base Cost + VAT.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>base_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field will hold the tax exclusive cost of the item.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>purchase_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This contains a code to indicate whether the item is normal merchandise (i.e. owned by the retailer), consignment stock or a concession item. Valid values are 0 - Owned, 1 - Consignment, 2 - Concession.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>calculation_basis</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This indicates if the cost for the consignment/concession item will be managed either based on cost per unit or as a percentage of retail. Valid values are C - Cost per Unit, P - Purchase Rate.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>purchase_rate</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column contains the percentage of the retail price which will determnie the cost paid to the supplier for a consignment or concession item.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

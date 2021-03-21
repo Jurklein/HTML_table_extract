@@ -1,0 +1,849 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/SupplierColDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#SupplierColDesc'>
+                        <font>SupplierColDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#SupplierDesc'>
+                          <font>SupplierDesc</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#ExtOfSupplierDesc'>
+                            <font>ExtOfSupplierDesc</font>
+                          </a>
+                        </li>
+                        <li>
+                          <a href='#LocOfSupplierDesc'>
+                            <font>LocOfSupplierDesc</font>
+                          </a>
+                        </li>
+                      </ul>
+                      <li>
+                        <a href='#ExtOfSupplierColDesc'>
+                          <font>ExtOfSupplierColDesc</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#LocOfSupplierColDesc'>
+                          <font>LocOfSupplierColDesc</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:SupplierColDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='SupplierColDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for SupplierColDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>collection_size</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SupplierDesc'>
+                              <font color='red'>SupplierDesc:SupplierDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>It's a referenced element. For detailed description, please refer referenced element doc.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ExtOfSupplierColDesc'>
+                              <font color='red'>ExtOfSupplierColDesc:ExtOfSupplierColDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Provide an extension hook to customize SupplierCollectionDesc.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#LocOfSupplierColDesc'>
+                              <font color='red'>LocOfSupplierColDesc:LocOfSupplierColDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Provide an extension hook to localize SupplierCollectionDesc.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:SupplierDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='SupplierDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for SupplierDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sup_xref_key</td>
+                          <td halign='left'>varchar232</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column holds the ID for the supplier used in the external financial system. It is populated by the integration that brings suppliers from external financial systems into RMS. This ID and the supplier site ID can be used to join to information about the supplier in the external system.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>sup_xref_key</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>32</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifying number for a supplier within the system.  The user determines this number when a new supplier is first added to the system.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>supplier_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SupAttr'>
+                              <font color='red'>SupAttr</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SupSite'>
+                              <font color='red'>SupSite</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ExtOfSupplierDesc'>
+                              <font color='red'>ExtOfSupplierDesc:ExtOfSupplierDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Provide an extension hook to customize SupplierDesc.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#LocOfSupplierDesc'>
+                              <font color='red'>LocOfSupplierDesc:LocOfSupplierDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Provide an extension hook to localize SupplierDesc.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ExtOfSupplierDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ExtOfSupplierDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ExtOfSupplierDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:LocOfSupplierDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='LocOfSupplierDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for LocOfSupplierDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#InSupplierDesc'>
+                              <font color='red'>InSupplierDesc:InSupplierDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>India Localization.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#BrSupplierDesc'>
+                              <font color='red'>BrSupplierDesc:BrSupplierDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Brazil Localization.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ExtOfSupplierColDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ExtOfSupplierColDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ExtOfSupplierColDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:LocOfSupplierColDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='LocOfSupplierColDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for LocOfSupplierColDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#InSupplierColDesc'>
+                              <font color='red'>InSupplierColDesc:InSupplierColDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>India Localization.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#BrSupplierColDesc'>
+                              <font color='red'>BrSupplierColDesc:BrSupplierColDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Brazil Localization.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

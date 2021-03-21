@@ -1,0 +1,1127 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Warehouse Management System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Warehouse Management System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/VendorHdrDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#VendorHdrDesc'>
+                        <font>VendorHdrDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:VendorHdrDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='VendorHdrDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for VendorHdrDesc in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifying number for a supplier within the system. The user determines this number when a new supplier is first added to the system.</td>
+                          <td halign='left'>vendor</td>
+                          <td halign='left'>vendor_number</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>An identifier that uniquely identifies a vendor.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sup_name</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the suppliers trading name.</td>
+                          <td halign='left'>vendor</td>
+                          <td halign='left'>vendor_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The name of a vendor.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sup_name_secondary</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This type can hold a string of max length of 240 characters.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the supplier's representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_phone</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a telephone number for the supplier's representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_fax</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a fax number for the supplier's representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_pager</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a pager number for the supplier's representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sup_status</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Valid values include: 'A' for an active supplier or 'I' for an inactive supplier. The status of a supplier will be checked when an order is being created to make certain the supplier is active.</td>
+                          <td halign='left'>vendor</td>
+                          <td halign='left'>sup_status</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>a code indicating the status of the supplier. valid values include  a  - active i - inactive</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>qc_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Determines whether orders from this supplier will default as requiring quality control.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>qc_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The percentage of items per receipt that will be marked for quality checking.</td>
+                          <td halign='left'>Vednor</td>
+                          <td halign='left'>PERCENT_QA_SAMPLING</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Value set in SCP table of the percentage of receiving containers that will be marked (WIP) for Quality Control</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>qc_freq</td>
+                          <td halign='left'>number2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The frequency for which items per receipt will be marked for quality checking.</td>
+                          <td halign='left'>Vendor</td>
+                          <td halign='left'>FREQ_QA_AUDIT</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Quality Assurance Audit Frequency</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vc_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Determines whether orders from this supplier will default as requiring vendor control.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vc_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The percentage of items per receipt that will be marked for vendor checking.</td>
+                          <td halign='left'>Vendor</td>
+                          <td halign='left'>PERCENT_VA_SAMPLING</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Percent of containers to be VA'd from this vendor</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vc_freq</td>
+                          <td halign='left'>number2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The frequency for which items per receipt that will be marked for vendor checking.</td>
+                          <td halign='left'>Vednor</td>
+                          <td halign='left'>FREQ_VA_AUDIT</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Quality Assurance Audit Frequency</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>currency_code</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A code identifying the currency the supplier uses for business transactions.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>lang</td>
+                          <td halign='left'>number6</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the suppliers preferred language. This field is provided for custom purchase orders in a specified language.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>terms</td>
+                          <td halign='left'>varchar215</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicator identifying the sales terms that will default when an order is created for the supplier. These terms specify when payment is due and if any discounts exist for early payment.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>freight_terms</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A code indicating what freight terms will default when an order is created for the supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ret_allow_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether or not the supplier will accept returns. Valid values are Y and N.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ret_auth_req</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if returns must be accompanied by an authorization number when sent back to the vendor.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ret_min_dol_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a value if the supplier requires a minimum dollar amount to be returned in order to accept the return. Returns of less than this amount will not be processed by the system. This field is stored in the supplier's currency.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ret_courier</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the courier that should be used for returns to the supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>handling_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The percent to be multiplied by an order's total cost to determine the handling cost for the return.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_po_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether purchase orders will be sent to the supplier via Electronic Data Interchange.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_po_chg</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether purchase order changes will be sent to the supplier via EDI.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_po_confirm</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether acknowledgements of purchase orders will be sent to the supplier via EDI.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_asn</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether the supplier will send Advance Shipment Notifications electronically.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_sales_rpt_freq</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the EDI sales report frequency for the supplier. Valid values are 'D' or 'W', specifying that sales and stock information will be downloaded daily or weekly.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_supp_available_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether the supplier will send availability via EDI.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_contract_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether contracts will be sent to the supplier via EDI.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>edi_invc_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether invoices, debit memos and credit note requests will be sent to/from the supplier via EDI.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cost_chg_pct_var</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the cost change variance by percent. If an EDI cost change is accepted and falls within these boundaries, it will be approved when inserted into the cost change dialog.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cost_chg_amt_var</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the cost change variance by amount. If an EDI cost change is accepted and falls within these boundaries, it will be approved when inserted into the cost change dialog.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>replen_approval_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether contract orders for the supplier should be created in Approved status.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_method</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The method used to ship the items on the purchase order from the country of origin to the country of import. Check the RMS data model for valid values.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>payment_method</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates how the purchase order will be paid. Valid options are: LC (Letter of Credit), WT (Wire Transfer), OA (Open Account).</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_telex</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a telex number for the supplier's representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_email</td>
+                          <td halign='left'>varchar2100</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains an email address for the supplier's representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>settlement_code</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates which payment process method is used for the supplier. Check the RMS data model for valid values.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pre_mark_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether or not the supplier has agreed to break an order into separate boxes (and mark them) that can be shipped directly to the stores.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>auto_appr_invc_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether or not the supplier's invoice matches can be automatically approved for payment.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dbt_memo_code</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates when a debit memo will be sent to the supplier to resolve a discrepancy. Valid values are Y if debit memos are always to be sent, L if debit memos are used only if a credit note is not sent by the invoice due date, or N if debit memos are neve</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>freight_charge_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether a supplier is allowed to charge freight costs to the client.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>auto_appr_dbt_memo_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether debit memos sent to the supplier can be automatically approved on creation.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>inv_mgmt_lvl</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether supplier inventory management information can be set up at the supplier/deparment level or just at the supplier level.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>backorder_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if backorders or partial shipments will be accepted.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vat_region</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the unique identifying number for the VAT region in the system.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>prepay_invc_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether or not all invoices for the supplier can be pre-paid invoices.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>service_perf_req_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if the supplier's services must be confirmed as performed before paying an invoice from that supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>invc_pay_loc</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates where invoices from this supplier are paid - at the store ('S') or centrally through corporate accounting ('C').</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>invc_receive_loc</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates where invoices from this supplier are received - at the store ('S') or centrally through corporate accounting ('C').</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>addinvc_gross_net</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if the supplier invoice lists items at gross cost ('G') or net cost ('N').</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_policy</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the delivery policy of the supplier. Valid values come from the DLVY code on code_head/code_detail.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comment_desc</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Any miscellaneous comments associated with the supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>default_item_lead_time</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the default lead time for the supplier. The lead time is the time the supplier needs between receiving an order and having the order ready to ship. This value will be defaulted to item/supplier relationships.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>duns_number</td>
+                          <td halign='left'>varchar29</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This type can hold a number of digits count umber.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>duns_loc</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The Dun and Bradstreet number of the location of the supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bracket_costing_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field will determine if the supplier uses bracket costing pricing structures.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vmi_order_status</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Determines the status in which any inbound PO's from this supplier are created. A NULL value indicates that the supplier is not a VMI supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>end_date_active</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not Yet Available</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dsd_supplier_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Specifies whether or not DSD shipments can be created for the supplier.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sup_qty_level</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the supplier order quantity level - 'CA' for cases, 'EA' for eaches.</td>
+                          <td halign='left'>vendor</td>
+                          <td halign='left'>sup_qty_level</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Default if NULL is 'EA'</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier_parent</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is the supplier number for the supplier sites. For Suppliers, this field will be NULL.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_delivery_discrepancy</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>final_dest_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Final Destination Indicator.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>external_ref_id</td>
+                          <td halign='left'>varchar232</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column holds the ID for the supplier used in the external financial system.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,549 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Store Inventory Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Store Inventory Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/PrGpSchDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'></font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#PrGpSchDesc'>
+                        <font>PrGpSchDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#Schedule'>
+                          <font>Schedule</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#DayOfWeek'>
+                            <font>DayOfWeek</font>
+                          </a>
+                        </li>
+                      </ul>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:PrGpSchDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='PrGpSchDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for PrGpSchDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>schedule_id</td>
+                          <td halign='left'>number8</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Schedule unique identifier. If this exists, the schedule will be updated. If no id is included, the schedule will be created.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>8,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the unique identifier of product group schedule.  this is assigned by the system.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>description</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description of the schedule.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the description of product the product group schdule.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>status</td>
+                          <td halign='left'>schedule_status</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Schedule Status. Valid values are OPEN, CLOSED, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>STATUS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the current status of the product group schedule.  valid values: o - open c - closed</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>group_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier of product group associated with the schedule.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PRODUCT_GROUP_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the unique identifier of the product group that this schdule is for.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>group_description</td>
+                          <td halign='left'>varchar2100</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description of product group associated with the schedule. This value cannot be altered on an update.</td>
+                          <td halign='left'>PRODUCT_GROUP</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>100</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the description of product group which is assigned by the user.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>group_type</td>
+                          <td halign='left'>schedule_group_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Type of product group associated with the schedule. This value cannot be altered on an update. Valid values are STOCK_COUNT_UNIT, STOCK_COUNT_UNIT_AMOUNT, STOCK_COUNT_PROBLEM_LINE, STOCK_COUNT_WASTAGE, STOCK_COUNT_RMS_SYNC, SHELF_REPLENISHMENT, ITEM_REQUEST, AUTO_TICKET_PRINT, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>PRODUCT_GROUP</td>
+                          <td halign='left'>TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>3,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>"Indicates the type of product group that was created.
+1 - Unit,
+2 - Unit and Amount,
+3 - Problem Line,
+4 - Wastage,
+5 - RMS Inventory Sync,
+6 - Shelf Replenishment,
+7 - Item Request"</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_id_col</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1000</td>
+                          <td halign='left'>Collection of store identifiers.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHED_STORE</td>
+                          <td halign='left'>STORE_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the unique identifier of the store that belongs to this product group schedule.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#Schedule'>
+                              <font color='red'>Schedule</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Schedule Details.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:Schedule</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='Schedule' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for Schedule in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>schedule_type</td>
+                          <td halign='left'>schedule_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Schedule Type. Valid values are DAILY, DAILY_BY_WEEKDAY, WEEKLY, MONTHLY_BY_DAY, MONTHLY_BY_WEEK, YEARLY_BY_DAY, YEARLY_BY_WEEK, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>4,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the frequency that the schedule should be run.  valid values: 1 a daily schedule. 2 a daily-by-weekday schedule. 3 a weekly schedule. 4 a monthly-by-day schedule. 5 a monthly-by-week schedule. 6 a yearly-by-day schedule. 7 a yearly-by-week schedule.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>start_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Schedule Start Date.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>START_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the beginning date of the time span which the schedule covers.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>end_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Schedule End Date.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>END_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the ending date of the time span which the schedule covers.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>daily_frequency</td>
+                          <td halign='left'>number6</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Daily frequency of schedule. Value expected should be in range of 1 to 999999.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PARAMETER_1</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the first schedule parameter. the value of this parameter depends on type: 1 this parameter is the daily frequency. 2 unused (0). 3 this parameter is the weekly frequency. 4 this parameter is the monthly frequency. 5 this parameter is the monthly frequency. 6 this parameter is the month in the range of java.util.calendar.january to java.util.calendar.december. 7 this parameter is the month in the range of java.util.calendar.january to java.util.calendar.december.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>weekly_frequency</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Weekly frequency of schedule. Value expected should be in range of 1 to 9999.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PARAMETER_2</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the second schedule parameter. the value of this parameter depends on type: 1 unused (0). 2 unused (0). 3 this parameter is the days of the week bitmap. this bitmap is a big-endian representation of the days of the week to schedule stock counts. the value is a bitwise-or where the bits in the range from java.util.calendar.sunday to java.util.calendar.saturday are: java.util.calendar.sunday whether this daily-by-weekday schedule is scheduled for sundays. java.util.calendar.monday whether this daily-by-weekday schedule is scheduled for mondays. java.util.calendar.tuesday whether this daily-by-weekday schedule is scheduled for tuesdays. java.util.calendar.wednesday whether this daily-by-weekday schedule is scheduled for wednesdays. java.util.calendar.thursday whether this daily-by-weekday schedule is scheduled for thursdays. java.util.calendar.friday whether this daily-by-weekday schedule is scheduled for fridays. java.util.calendar.saturday whether this daily-by-weekday schedule is scheduled for saturdays. 4 this parameter is the day of the month in the range of 1 to 31. 5 this parameter is the number of the week in the month in the range of 1 to 5. 6 this parameter is the day of the month in the range of 1 to 31. 7 this parameter is the number of the week in the month in the range of 1 to 5.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>monthly_frequency</td>
+                          <td halign='left'>number5</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Monthly frequency of schedule. Value expected should be in range of 1 to 99999.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PARAMETER_1</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the first schedule parameter. the value of this parameter depends on type: 1 this parameter is the daily frequency. 2 unused (0). 3 this parameter is the weekly frequency. 4 this parameter is the monthly frequency. 5 this parameter is the monthly frequency. 6 this parameter is the month in the range of java.util.calendar.january to java.util.calendar.december. 7 this parameter is the month in the range of java.util.calendar.january to java.util.calendar.december.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#DayOfWeek'>
+                              <font color='red'>DayOfWeek</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>7</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of days of week. Single or multiple values expected depending on schedule type selected. Each value denoted a day of the week.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>day_of_month</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Day of month. Value expected should be in range of 1-31 as per the calendar dates for the month.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PARAMETER_2</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the second schedule parameter. the value of this parameter depends on type: 1 unused (0). 2 unused (0). 3 this parameter is the days of the week bitmap. this bitmap is a big-endian representation of the days of the week to schedule stock counts. the value is a bitwise-or where the bits in the range from java.util.calendar.sunday to java.util.calendar.saturday are: java.util.calendar.sunday whether this daily-by-weekday schedule is scheduled for sundays. java.util.calendar.monday whether this daily-by-weekday schedule is scheduled for mondays. java.util.calendar.tuesday whether this daily-by-weekday schedule is scheduled for tuesdays. java.util.calendar.wednesday whether this daily-by-weekday schedule is scheduled for wednesdays. java.util.calendar.thursday whether this daily-by-weekday schedule is scheduled for thursdays. java.util.calendar.friday whether this daily-by-weekday schedule is scheduled for fridays. java.util.calendar.saturday whether this daily-by-weekday schedule is scheduled for saturdays. 4 this parameter is the day of the month in the range of 1 to 31. 5 this parameter is the number of the week in the month in the range of 1 to 5. 6 this parameter is the day of the month in the range of 1 to 31. 7 this parameter is the number of the week in the month in the range of 1 to 5.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>week_of_month</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Week of month. Value expected should be in range of 1 to 5.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PARAMETER_2</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the second schedule parameter. the value of this parameter depends on type: 1 unused (0). 2 unused (0). 3 this parameter is the days of the week bitmap. this bitmap is a big-endian representation of the days of the week to schedule stock counts. the value is a bitwise-or where the bits in the range from java.util.calendar.sunday to java.util.calendar.saturday are: java.util.calendar.sunday whether this daily-by-weekday schedule is scheduled for sundays. java.util.calendar.monday whether this daily-by-weekday schedule is scheduled for mondays. java.util.calendar.tuesday whether this daily-by-weekday schedule is scheduled for tuesdays. java.util.calendar.wednesday whether this daily-by-weekday schedule is scheduled for wednesdays. java.util.calendar.thursday whether this daily-by-weekday schedule is scheduled for thursdays. java.util.calendar.friday whether this daily-by-weekday schedule is scheduled for fridays. java.util.calendar.saturday whether this daily-by-weekday schedule is scheduled for saturdays. 4 this parameter is the day of the month in the range of 1 to 31. 5 this parameter is the number of the week in the month in the range of 1 to 5. 6 this parameter is the day of the month in the range of 1 to 31. 7 this parameter is the number of the week in the month in the range of 1 to 5.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>month_of_year</td>
+                          <td halign='left'>month_of_year</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Month of year. Each value denotes a month of the year. Valid values are JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PARAMETER_1</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the first schedule parameter. the value of this parameter depends on type: 1 this parameter is the daily frequency. 2 unused (0). 3 this parameter is the weekly frequency. 4 this parameter is the monthly frequency. 5 this parameter is the monthly frequency. 6 this parameter is the month in the range of java.util.calendar.january to java.util.calendar.december. 7 this parameter is the month in the range of java.util.calendar.january to java.util.calendar.december.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:DayOfWeek</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='DayOfWeek' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for DayOfWeek in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>day_of_week</td>
+                          <td halign='left'>days_of_week</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Day of week Valid values are SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>PRODUCT_GROUP_SCHEDULE</td>
+                          <td halign='left'>PARAMETER_3</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>1 unused (0). 2 unused (0). 3 this parameter is the days of the week bitmap. this bitmap is a big-endian representation of the days of the week to schedule stock counts. the value is a bitwise-or where the bits in the range from java.util.calendar.sunday to java.util.calendar.saturday are</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the third schedule parameter. the value of this parameter depends on type: 1 unused (0). 2 unused (0). 3 unused (0). 4 unused (0). 5 this parameter is the day of the week in the range of java.util.calendar.sunday to java.util.calendar.saturday. 6 unused (0). 7 this parameter is the day of the week in the range of java.util.calendar.sunday to java.util.calendar.saturday.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+<html>
+ <head>
+  <title>
+   RFM_InformTaxRBO
+  </title>
+ </head>
+ <body>
+  <table border="1" cellpadding="3" cellspacing="0" data-name="InformTaxRBO" width="100%">
+   <thead data-theadtype="xsd_thead_type">
+    <tr bgcolor="#D0D0D0">
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Name
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Data Type
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Min Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Max Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Description
+     </th>
+     <th align="left" colspan="6">
+      Application: RFM
+     </th>
+    </tr>
+    <tr bgcolor="#B0C4DE">
+     <th align="left">
+      Table
+     </th>
+     <th align="left">
+      Column Name
+     </th>
+     <th align="left">
+      Data Type
+     </th>
+     <th align="left">
+      Data Length
+     </th>
+     <th align="left">
+      Column Required?
+     </th>
+     <th align="left">
+      Application Description
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td halign="left">
+      tax_amount
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the tax amount for an item.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      There is no direct mapping for this field. This is a calculated value base on the few columns in FM_FISCAL_DOC_TAX_DETAIL
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      tax_basis_amount
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the tax basis amount
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      There is no direct mapping for this field. This is a calculated value base on the few columns in FM_FISCAL_DOC_TAX_DETAIL
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      modified_tax_basis_amount
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Modified tax basis amount
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      There is no direct mapping for this field. This is a calculated value base on the few columns in FM_FISCAL_DOC_TAX_DETAIL
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      tax_code
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the tax code applied to an
+							item.
+     </td>
+     <td halign="left">
+      FM_RESOLUTION
+     </td>
+     <td halign="left">
+      TAX_CODE
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      6
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      the tax code for which the tax discrepancy occurred.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      tax_rate
+     </td>
+     <td halign="left">
+      number20_10
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the tax rate for an item.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      There is no direct mapping for this field. This is a calculated value base on the few columns in FM_FISCAL_DOC_TAX_DETAIL
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      tax_exception_type
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the exception status of the tax
+							like 
+							T - Taxable
+							E - Exempt
+							D - Deferred
+							N - Tax not applicable
+							S - Suspended
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No Column Mapping in RFM. It is defaulted to 'T'
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#NameValPairRBO">
+       <font color="red">
+        NameValPairRBO:NameValPairRBO
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Represents 1 to many Name Value Pair objects.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+

@@ -1,0 +1,1351 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Store Inventory Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Store Inventory Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/StrItmDtlDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'></font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#StrItmDtlDesc'>
+                        <font>StrItmDtlDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#StrItmDtlNslQty'>
+                          <font>StrItmDtlNslQty</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#StrItmDtlSup'>
+                          <font>StrItmDtlSup</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#StrItmDtlImg'>
+                          <font>StrItmDtlImg</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrItmDtlDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrItmDtlDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrItmDtlDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Item identifier</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>ITEM_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the unique identifier of the item.  this should be the item number at the level that the item is sold and inventory tracked at.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Store identifier</td>
+                          <td halign='left'>STORE_ITEM</td>
+                          <td halign='left'>STORE_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the unique identifier of the store where the inventory is located.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>parent_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Item parent identifier</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>PARENT_ITEM_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the unique identifier of the item/group at the level above the item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_type</td>
+                          <td halign='left'>str_itm_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Item type. Valid values are ITEM, PACK_SIMPLE, PACK_COMPLEX, PACK_SIMPLE_BREAKABLE, PACK_COMPLEX_BREAKABLE, UNKNOWN.</td>
+                          <td halign='left'>STORE_ITEM, ITEM</td>
+                          <td halign='left'>ITEM_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicates the type of item. Possible values are:0 - Item,15 - Simple Pack,20 - Complex Pack,25 - Simple Breakable Pack,30 - Complex Breakable Pack</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sellable</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if item is sellable, false otherwise</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>SELLABLE</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>indicates if this item may be sold as a unit.   valid values are  Y and N. this field is required by sim when using pack items.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>orderable</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if item is orderable, false otherwise</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>ORDERABLE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>indicates if this item may be order from a supplier. valid values are: Y and N.  this field is required by sim.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>inventoriable</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if item is inventoriable, false otherwise</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>INVENTORIABLE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Y indicates inventoriable, N indicates not inventoriable</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_alone</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if an item must be shipped alone on a customer order, false otherwise</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>SHIP_ALONE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>indicates if the item should be shipped to the customer is a seperate package versus being grouped together in a box. valid values are: Y and N.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>short_description</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Short description</td>
+                          <td halign='left'>STORE_ITEM, ITEM</td>
+                          <td halign='left'>SHORT_DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the textural description of the item and its characteristics.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>long_description</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Long description</td>
+                          <td halign='left'>STORE_ITEM, ITEM</td>
+                          <td halign='left'>LONG_DESCRIPTION</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>400</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>long description of the item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>department_id</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Merchandise hierarchy department identifier</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>DEPARTMENT_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>hierarchy department id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>department_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Merchandise hierarchy department name</td>
+                          <td halign='left'>ITEM_HIERARCHY</td>
+                          <td halign='left'>DEPARTMENT_NAME</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>360</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>hierarchy department name</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>class_id</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Merchandise hierarchy class identifier</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>CLASS_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>hierarchy class id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>class_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Merchandise hierarchy class name</td>
+                          <td halign='left'>ITEM_HIERARCHY</td>
+                          <td halign='left'>CLASS_NAME</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>360</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>hierarchy class name</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>subclass_id</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Merchandise hierarchy subclass id</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>SUBCLASS_ID</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>hierarchy subclass id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>subclass_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Merchandise hierarchy subclass name</td>
+                          <td halign='left'>ITEM_HIERARCHY</td>
+                          <td halign='left'>SUBCLASS_NAME</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>360</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>hierarchy subclass name</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_of_measure</td>
+                          <td halign='left'>varchar240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Standard unit of measure</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>UINT_OF_MEASURE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>unit of measure which the stock for this item is tracked at the coporate level.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>status</td>
+                          <td halign='left'>str_itm_status</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Current status Valid values are ACTIVE, INACTIVE, DISCONTINUED, DELETED, AUTO_STOCKABLE, NON_RANGED, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>STATUS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the current status of the item.   A - Active, C - Discountinued, I - Inactive,
+D - Deleted,
+Q - AutoStockable,
+N - Non-ranged</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>default_case_size</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Default case size</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>CASE_SIZE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>default number of items that are contained in a case when shipped from or to the store.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>uin_type</td>
+                          <td halign='left'>str_itm_uin_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique Identifier Number type. Empty if item does not support UINs. Valid values are SERIAL, AGSN, UNKNOWN.</td>
+                          <td halign='left'>STORE_UIN_ADMIN_DEPT, STORE_UIN_ADMIN_ITEM</td>
+                          <td halign='left'>UIN_TYPE</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>2,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>UIN type valid values
+1 - SN - serial number,
+2 - AGSN - Auto Generate SN</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>uin_label</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique Identifier Number label. Empty if item does not support UINs.</td>
+                          <td halign='left'>STORE_UIN_ADMIN_DEPT, STORE_UIN_ADMIN_ITEM</td>
+                          <td halign='left'>UIN_LABEL_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>reference to uin_label.id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unavailable_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unavailable inventory quantity</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Calculated total unavailable SOH.
+Total Unavailable SOH = Transfer Reserved Qty + Customer Reserved Qty + Vendor Return Qty + Non Sellable Qty.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>nonsellable_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Non-Sellable inventory quantity</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_NON_SELLABLE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the quantity of the item that is not available for sale and is used for stock events where the inventory is moved from unavailable to another status.  for example an inventory adjustment may move some of the inventory from this bucket to available to sell.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>customer_reserved_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Customer reserved inventory quantity</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_CUSTOMER_RESERVE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the quantity of the item that is reserved for customers.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>in_transit_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>In transit inventory quantity</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_IN_TRANSIT</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the quantity of the item that is in transit to this store.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stock_in_delivery_bay</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Inventory quantity in delivery bay area</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_DELIVERY_BAY</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the quantity of the item that is in the delivery bay.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stock_in_backroom</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Inventory quantity in back room area</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Available stock on hand subtract with stock in delivery bay and stock on shop floor</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stock_on_shopfloor</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Inventory quantity on shop floor</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_SHOP_FLOOR</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the quantity of the item that is on the shop floor.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stock_on_hand</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Stock on hand inventory quantity</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_TOTAL</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Stock on hand</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>available_inventory</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Available inventory quantity</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Available inventory quantity</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>transfer_reserved_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Transfer reserved inventory quantity</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_RESERVED</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the quantity of the item that is reserved for transferring out of the store.  this is the quantity for items that have transfer out events and return to warehouse events that are in pending status.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vendor_return_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Vendor return inventory quantity</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>QUANTITY_VENDOR_RETURN</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the quantity of the item that is reserved for a return to vendor event that is in the pending state.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ordered_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Ordered quantity</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Value is difference between expected and received quantities on Allocation, Purchase Order and Transfer document.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>received_today_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Inventory quantity received today</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>LAST_RECEIVED_QUANTITY</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The total amount of inventory for all receipts on the day specified by LAST_RECEIVED_DAY</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>last_received_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date item was last received at store</td>
+                          <td halign='left'>STORE_ITEM_STOCK</td>
+                          <td halign='left'>LAST_RECEIVED_DAY</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the date of when the store last received inventory for this item into the store.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_supplier_id</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Primary supplier identifier</td>
+                          <td halign='left'>PRIMARY_SUPPLIER_ID</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the unique identifier of the supplier that is the default primary supplier for the item at this location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_supplier_name</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Primary supplier name</td>
+                          <td halign='left'>SUPPLIER</td>
+                          <td halign='left'>NAME</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the name of the supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_sequence_id</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Primary store area sequence identifier</td>
+                          <td halign='left'>STORE_SEQUENCE_AREA</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>System generated unique identifier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_sequence_name</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Prime store area sequence name</td>
+                          <td halign='left'>STORE_SEQUENCE_AREA</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Description Of Store Sequence</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>upc</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Universal Product Code</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>ITEM_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the retailers sku or unique item identifier for items sold or returned. this field is required by sim.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vpn</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Vendor Product Number</td>
+                          <td halign='left'>SUPPLIER_ITEM</td>
+                          <td halign='left'>VENDOR_PRODUCT_NUMBER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>256</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the vendor product number for this item and supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>suggested_ticket_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Suggested ticket type code</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>TICKET_TYPE_CODE</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>suggested ticket type code for this item. value is obtained from rms.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_order_allowed</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if store order is allowed, false otherwise</td>
+                          <td halign='left'>STORE_ITEM</td>
+                          <td halign='left'>STORE_ORDER_ALLOWED</td>
+                          <td halign='left'>CHAR</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>contains an indicator that determines if uploaded store orders should be rejected. if the indicator is n, then store orders for all need dates are valid. if y, store orders with needs date on or after the next_delivery_date are valid.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_order_replenish_type</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if this item is store order replenishment, false otherwise</td>
+                          <td halign='left'>STORE_ITEM</td>
+                          <td halign='left'>REPLENISHMENT_TYPE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>contains the character code for the algorithm that will be used to calculate the recommended order quantity for the item location. valid values so - store orders</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multiple_delivery_allowed</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if multiple deliveries are allowed, false otherwise</td>
+                          <td halign='left'>STORE_ITEM</td>
+                          <td halign='left'>MULTIPLE_DELIVERY_PER_DAY</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>is this item eligible for multiple deliveries per day.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>soh_inquiry_at_pack_level</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if quantities inquires should return inventory at the pack level, false indicates it should be estimated from components.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>True if quantities inquires should return inventory at the pack level, false indicates it should be estimated from components.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_type1</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>First differentiator type</td>
+                          <td halign='left'>DIFFERENTIATOR_TYPE</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>contains the diff type description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_description1</td>
+                          <td halign='left'>varchar2255</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>First differentiator description</td>
+                          <td halign='left'>DIFFERENTIATOR</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>description of the differential number. (for example, blueberry, shower fresh, red, etc.)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_type2</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Second differentiator type</td>
+                          <td halign='left'>DIFFERENTIATOR_TYPE</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>contains the diff type description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_description2</td>
+                          <td halign='left'>varchar2255</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Second differentiator description</td>
+                          <td halign='left'>DIFFERENTIATOR</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>description of the differential number. (for example, blueberry, shower fresh, red, etc.)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_type3</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Third differentiator type</td>
+                          <td halign='left'>DIFFERENTIATOR_TYPE</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>contains the diff type description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_description3</td>
+                          <td halign='left'>varchar2255</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Third differentiator description</td>
+                          <td halign='left'>DIFFERENTIATOR</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>description of the differential number. (for example, blueberry, shower fresh, red, etc.)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_type4</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Fourth differentiator type</td>
+                          <td halign='left'>DIFFERENTIATOR_TYPE</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>contains the diff type description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_description4</td>
+                          <td halign='left'>varchar2255</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Fourth differentiator description.</td>
+                          <td halign='left'>DIFFERENTIATOR</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>description of the differential number. (for example, blueberry, shower fresh, red, etc.)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>price_type</td>
+                          <td halign='left'>str_itm_price_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Price type Valid values are CLEARANCE, PROMOTIONAL, PERMANENT, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>PRICE_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The item price type. Valid values :  200- Clearance, 201- Promotional, 202-Permanent</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promotion_type</td>
+                          <td halign='left'>str_itm_promotion_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Price promotion type Valid values are COMPLEX, SIMPLE, THRESHOLD, CREDIT, UNKNOWN, NO_VALUE.</td>
+                          <td halign='left'>ITEM_PRICE_HISTORY</td>
+                          <td halign='left'>PROMO_COMP_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Promotion component type. Valid values are
+0 - Complex promotion, 1 - Simple Promoton, 2 - Threshold Promotion, 3 - Credit Promotion, 4- transaction promotion</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>retail_price</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Retail price</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>PRICE_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The selling retail price value with price type of 1 (permanent) ; or the promotion retail price value with price type of 2(promotion); or the clearance retail price with price type of 3 (clearance).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>retail_currency</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Retail currency code. A standardized 3 character code defined in ISO-4217.</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>PRICE_CURRENCY</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The Price currency.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>retail_effective_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Retail price effective date</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>EFFECTIVE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the date the new price should take effect.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>suggest_retail_cur</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The currency code of the manufacturer's suggested retail price. A standardized 3 character code defined in ISO-4217.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Currency is default currency type configured on system config parameter.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>suggest_retail_value</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The amount of the manufacturer's suggested retail price.</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>MANU_SUGGESTED_RETAIL_PRICE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Manufacturer suggested retail price</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>replenishment_method</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Replenishment method code</td>
+                          <td halign='left'>STORE_ITEM</td>
+                          <td halign='left'>REPLENISHMENT_TYPE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>contains the character code for the algorithm that will be used to calculate the recommended order quantity for the item location. valid values so - store orders</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_unit_quantity</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Multiple unit quantity</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>MULTI_UNITS</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field contains the multi-units for the price change.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_unit_price</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Multiple unit price</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>MULTI_UNIT_RETAIL</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Mutli Unit Retail price</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_unit_currency</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Multiple unit price currency code. A standardized 3 character code defined in ISO-4217.</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>MULTI_UNIT_RETAIL_CURRENCY</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field holds the multi-unit retail in the multi-selling unit of measure for the price change.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_unit_selling_uom</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Selling unit of measure of multiple units</td>
+                          <td halign='left'>ITEM_PRICE</td>
+                          <td halign='left'>MULTI_UNIT_UOM</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field holds the selling unit of measure for an items multi-unit retail.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>next_delivery_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Next delivery date</td>
+                          <td halign='left'>STORE_ITEM</td>
+                          <td halign='left'>NEXT_DELIVERY_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the next delivery date of this item based on the replinishment type. obtained from rms</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrItmDtlNslQty'>
+                              <font color='red'>StrItmDtlNslQty</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of nonSellable quantities by individual non-sellable reason</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrItmDtlSup'>
+                              <font color='red'>StrItmDtlSup</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of suppliers</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrItmDtlImg'>
+                              <font color='red'>StrItmDtlImg</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of item images</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrItmDtlNslQty</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrItmDtlNslQty' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrItmDtlNslQty in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>nonsell_qty_type_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>SIM internal non-sellable quantity type identifier</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>quantity</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Quantity</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrItmDtlSup</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrItmDtlSup' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrItmDtlSup in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier_id</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>SIM internal supplier identifier</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier_name</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Supplier name</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrItmDtlImg</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrItmDtlImg' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrItmDtlImg in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>url</td>
+                          <td halign='left'>varchar21000</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Store item image's universal resource locator.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by SIM.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

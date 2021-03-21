@@ -1,0 +1,347 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/MrchHrSclsDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#MrchHrSclsDesc'>
+                        <font>MrchHrSclsDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:MrchHrSclsDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='MrchHrSclsDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for MrchHrSclsDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>subclass</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number which uniquely identifies the subclass within the department and class.</td>
+                          <td halign='left'>subclass</td>
+                          <td halign='left'>subclass</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the number which uniquely identifies the subclass.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>subclass_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the subclass which, along with the subclass number, uniquely identifies the subclass.</td>
+                          <td halign='left'>subclass</td>
+                          <td halign='left'>sub_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the name of the subclass.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>class</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the class number of which the subclass is a member.</td>
+                          <td halign='left'>subclass</td>
+                          <td halign='left'>class</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the number of the class to which the subclass belongs.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dept</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the department number of which the subclass is a member.</td>
+                          <td halign='left'>subclass</td>
+                          <td halign='left'>dept</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the department number of which the subclass is a member.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unique_subclass_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the unique subclass id within the system.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unique_class_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the unique class id the subclass is part of.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

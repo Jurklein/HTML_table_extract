@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Warehouse Management System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Warehouse Management System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/ManifestTrackDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'></font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#ManifestTrackDesc'>
+                        <font>ManifestTrackDesc</font>
+                      </a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ManifestTrackDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ManifestTrackDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ManifestTrackDesc in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>transaction_type</td>
+                          <td halign='left'>manifest_tran_type</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Type of transaction that was manifested. Valid values are FULFILLMENT_ORDER_DELIVERY, RETURN, TRANSFER.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>transaction_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Identifier of transaction that was manifested.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>shipment_id</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field represents the shipment number that manifest systems use to group multi-container shipments for a carrier. Typically a 1 of 4 type message.</td>
+                          <td halign='left'>container</td>
+                          <td halign='left'>carrier_shipment_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This field represents the shipment number that manifest systems use to group multi-container shipments for a carrier. Typically a 1 of 4 type message</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_id</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Identifier of the container.</td>
+                          <td halign='left'>container</td>
+                          <td halign='left'>container_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique identifier for a container.  A container is a generic thing that can hold merchandise or other containers.  This could be carton, pallet, tote, trolley, laundry basket, etc.
+A Manifest record is created based on the container id, bol_nbr and dest_id.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_code</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Carrier selected.</td>
+                          <td halign='left'>container</td>
+                          <td halign='left'>carrier_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A code which uniquely identifies a carrier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_service_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Service to be used by the carrier.</td>
+                          <td halign='left'>container</td>
+                          <td halign='left'>service_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'> Code for the service.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>MMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_tracking_number</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is a unique tracking number that is used to track containers through carriers system.</td>
+                          <td halign='left'>container</td>
+                          <td halign='left'>carrier_tracking_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This is a unique tracking number that is used to track containers through carriers system</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

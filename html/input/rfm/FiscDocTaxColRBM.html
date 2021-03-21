@@ -1,0 +1,3582 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Fiscal management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Fiscal management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/FiscDocTaxColRBM/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>
+			This is root element of this document which
+			contains name
+			space definitions for the document elements.
+		</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#FiscDocTaxColRBM'>
+                        <font>FiscDocTaxColRBM</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#FiscDocChnkTaxRBO'>
+                          <font>FiscDocChnkTaxRBO</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#FiscDocTaxRBO'>
+                            <font>FiscDocTaxRBO</font>
+                          </a>
+                        </li>
+                        <ul>
+                          <li>
+                            <a href='#LineItemTaxRBO'>
+                              <font>LineItemTaxRBO</font>
+                            </a>
+                          </li>
+                          <ul>
+                            <li>
+                              <a href='#TaxDetRBO'>
+                                <font>TaxDetRBO</font>
+                              </a>
+                            </li>
+                            <li>
+                              <a href='#InconclRuleRBO'>
+                                <font>InconclRuleRBO</font>
+                              </a>
+                            </li>
+                            <li>
+                              <a href='#PrdItemTaxRBO'>
+                                <font>PrdItemTaxRBO</font>
+                              </a>
+                            </li>
+                            <ul>
+                              <li>
+                                <a href='#NameValPairRBO'>
+                                  <font>NameValPairRBO</font>
+                                </a>
+                              </li>
+                            </ul>
+                            <li>
+                              <a href='#SvcItemTaxRBO'>
+                                <font>SvcItemTaxRBO</font>
+                              </a>
+                            </li>
+                            <ul>
+                              <li>
+                                <a href='#NameValPairRBO'>
+                                  <font>NameValPairRBO</font>
+                                </a>
+                              </li>
+                            </ul>
+                            <li>
+                              <a href='#NameValPairRBO'>
+                                <font>NameValPairRBO</font>
+                              </a>
+                            </li>
+                          </ul>
+                          <li>
+                            <a href='#TaxDetRBO'>
+                              <font>TaxDetRBO</font>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#FreightRBO'>
+                              <font>FreightRBO</font>
+                            </a>
+                          </li>
+                        </ul>
+                      </ul>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:FiscDocTaxColRBM</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='FiscDocTaxColRBM' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for FiscDocTaxColRBM in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#FiscDocChnkTaxRBO'>
+                              <font color='red'>FiscDocChnkTaxRBO:FiscDocChnkTaxRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							It's a referenced element. For detailed
+							description, please refer referenced element doc.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>logs</td>
+                          <td halign='left'>varchar24000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates all header level log
+							information.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vendor_type</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Tax Vendor used for
+							calculation like Mastersaf,Vertex.
+							This is an out parameter.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>country</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the base ISO country code for
+							which tax needs to be calculated.
+							Possible values are BR,US. This
+							is an Input parameter, if nothing is specified
+							then US is taken as
+							the default country.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>transaction_type</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the type of Transaction.
+							Possible values are 'PO', 'INBOUND_NF', 'OUTBOUND_NF',
+							'ITEM_CREATE'.
+							If nothing is specified default value is 'NONE'.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:FiscDocChnkTaxRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='FiscDocChnkTaxRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for FiscDocChnkTaxRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chunk_id</td>
+                          <td halign='left'>varchar22</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the chunk number
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#FiscDocTaxRBO'>
+                              <font color='red'>FiscDocTaxRBO:FiscDocTaxRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							It's a referenced element. For detailed
+							description, please refer referenced element doc.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:FiscDocTaxRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='FiscDocTaxRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for FiscDocTaxRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>document_number</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Fiscal document
+							number.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>fiscal_document_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Fiscal Document Date.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_entity_code</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Legal Entity Code
+							for the source location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_entity_type</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Entity Type
+							of the source location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_addr_city_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the City Id or Code
+							of the source location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_federal_tax_reg_id</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Federal Tax Registration
+							Number of the source location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SrcEcoClassCd'>
+                              <font color='red'>SrcEcoClassCd</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Indicates the National economic
+							classification code of the source location.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SrcTaxContributor'>
+                              <font color='red'>SrcTaxContributor</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Description is not available.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SrcDiffTaxRegime'>
+                              <font color='red'>SrcDiffTaxRegime</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Indicates the Tax Regime of a Supplier (Source Scenario) which will enable to have a 
+							reduction in tax basis amount.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_is_income_range_eligible</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates whether the Supplier's income range (Source Scenario) is 
+							eligible for a reduction in tax basis. Possible values 
+							are "Y" or "N"  
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No mapping column found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_is_distr_a_manufacturer</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							(Source Scenario) Indicates whether the Distributor is a Manufacturer also. Possible values 
+							are "Y" or "N"  
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_icms_simples_rate</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							(Source Scenario) Indicates the ICMS rate of a supplier participating in SIMPLES regime. 
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_is_rural_producer</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates whether the Source is a Rural
+							Producer or not.Possible values are "Y" or
+							"N"
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>src_is_simples_contributor</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates If the company is part of the
+							'SIMPLES' regime.Possible values are 'Y' or
+							'N'
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SrcNameValPair'>
+                              <font color='red'>SrcNameValPair</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many Name Value Pair objects.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_entity_code</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Legal Entity Code
+							of the destination location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_entity_type</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Entity Type
+							of the destination location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_addr_city_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the City Id or Code
+							of the destination location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_federal_tax_reg_id</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Federal Tax Registration
+							Number of the destination location.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#DstEcoClassCd'>
+                              <font color='red'>DstEcoClassCd</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Indicates the National economic
+							classification code of the
+							destination location.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#DstDiffTaxRegime'>
+                              <font color='red'>DstDiffTaxRegime</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Indicates the Tax Regime of a Supplier (Destination Scenario) which will enable to have a 
+							reduction in tax basis amount.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_is_income_range_eligible</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							(Destination Scenario)Indicates whether the Supplier's income range is 
+							eligible for a reduction in tax basis. Possible values 
+							are "Y" or "N"  
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_is_distr_a_manufacturer</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							(Destination Scenario)Indicates whether the Distributor is a Manufacturer also. Possible values 
+							are "Y" or "N"  
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_icms_simples_rate</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							(Destination Scenario) Indicates the ICMS rate of a supplier participating in SIMPLES regime. 
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#DstTaxContributor'>
+                              <font color='red'>DstTaxContributor</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Description is not available.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#DstNameValPair'>
+                              <font color='red'>DstNameValPair</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many Name Value Pair objects.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>disc_merch_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the discounted merchandise cost.
+						</td>
+                          <td halign='left'>fm_fiscal_doc_header</td>
+                          <td halign='left'>total_item_calc_value</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the cost of all merchandise of the fiscal document calculated by the system.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the total cost of the items.
+						</td>
+                          <td halign='left'>fm_fiscal_doc_header</td>
+                          <td halign='left'>total_doc_calc_value</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the total value of the fiscal document calculated by the system.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total_services_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the total services cost of the items.
+						</td>
+                          <td halign='left'>fm_fiscal_doc_header</td>
+                          <td halign='left'>total_serv_calc_value</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the cost of all services of the fiscal document calculated by the system.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>calculation_status</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Mastersaf response status.
+							W - Warning, E - Error, S - Success, I - With Inconclusive Rules
+							AI - With Warning and Inconclusive Rules
+						</td>
+                          <td halign='left'>fm_tax_call_hdr_res</td>
+                          <td halign='left'>CALCULATION_STATUS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>It holds the results coming from the external tax engine at the header level.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#LineItemTaxRBO'>
+                              <font color='red'>LineItemTaxRBO:LineItemTaxRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many LineItemTaxRBO.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#Messages'>
+                              <font color='red'>Messages</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Description is not available.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#TaxDetRBO'>
+                              <font color='red'>TaxDetRBO:TaxDetRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many TaxDetRBO.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#FreightRBO'>
+                              <font color='red'>FreightRBO:FreightRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many FreightRBO.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>reduced_icms_tax</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+			                        This column indicates the reduced ICMS Tax value for sales or transfers done to a free zone.
+                                  </td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:LineItemTaxRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='LineItemTaxRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for LineItemTaxRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>document_line_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates Unique ID of the item of the
+							fiscal document
+						</td>
+                          <td halign='left'>FM_TAX_CALL_DTL_RES</td>
+                          <td halign='left'>FISCAL_DOC_LINE_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column stores the fiscal line document sequence number used for identifying the Nota Fiscal detail.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the item id.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>ICMS_CST</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Item dentifier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pack_item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates pack item id.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>FISCAL_DOC_LINE_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This will be populated with fiscal document line id only incase of pack items</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_tran_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the item transaction code.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>NF_CFOP</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Fiscal code of  the transaction</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>taxed_quantity</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the item's taxed quantity.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>FISCAL_QTY</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the taxed quantity. This is the quantity on which the taxes are applied.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>taxed_quantity_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit of measure of the taxed quantity.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>FISCAL_UOM</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the unit of measure for the taxed quantity.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the total cost.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deduced_fiscal_code_opr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates deduced fiscal code of
+							operation.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>ENTRY_CFOP</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column stores the deduced fiscal code of operation. This is an output from the external tax engine.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>icms_cst_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the ICMS CST Code.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>ICMS_CST</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the CST Code for ICMS type of tax.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pis_cst_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the PIS CST Code.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>PIS_CST</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field holds the cst code for pis tax code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cofins_cst_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the COFINS CST Code.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>COFINS_CST</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the CST Code for COFINS type of tax.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deduce_icms_cst_code</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates to deduce the ICMS CST Code.
+						</td>
+                          <td halign='left'>FM_TAX_CALL_DTL_RES</td>
+                          <td halign='left'>ICMS_CST_IND</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column stores the ICMS CST code indicator. Possible values are Y (Yes) and N (No). Based on this  ICMS_CST_CODE will be populated</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deduce_pis_cst_code</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates to deduce the PIS CST Code.
+						</td>
+                          <td halign='left'>FM_TAX_CALL_DTL_RES</td>
+                          <td halign='left'>PIS_CST_IND</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the PIS CST code indicator. Possible values are Y (Yes) and N (No). Based on this  PIS_CST_CODE will be populated</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>deduce_cofins_cst_code</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates to deduce the COFINS CST Code.
+						</td>
+                          <td halign='left'>FM_TAX_CALL_DTL_RES</td>
+                          <td halign='left'>COFINS_CST_IND</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the COFINS CST code indicator. Possible values are Y (Yes) and N (No). Based on this  COFINS_CST_CODE will be populated</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recoverable_icmsst</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the recoverable ICMSST amount.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>RECOVERABLE_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This is the field where the value of ICMSST will be informed based on the NFs observation. The information stored in these fields will be sent in the API for the historical updates.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total_cost_with_icms</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the total cost with ICMS.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>TOTAL_CALC_COST</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the total cost including ICMS value for a Nota Fiscal from a distributor type of supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_cost_with_icms</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit cost with ICMS.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>UNIT_COST</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the unit cost of the item including ICMS value for a Nota Fiscal from a distributor type of supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recoverable_base_icmsst</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the ICMSST base recoverable
+							amount.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>RECOVERABLE_BASE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This is the field where the base of ICMSST will be informed based on the NFs observation. The information stored in these fields will be sent in the API for the historical updates.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates unit cost of the item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dim_object</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Specific object whose dimensions are specified in this record.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>length</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Length of dim_object measured in units specified in lwh_uom.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>width</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Width of dim_object measured in units specified in lwh_uom.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>lwh_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unit of measurement for length, width and height.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>weight</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Weight of dim_object measured in units specified in weight_uom.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>net_weight</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Net weight of the dim_object (weight without packaging) measured in units specified in weight_uom.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>weight_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unit of measurement for weight.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>liquid_volume</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Liquid volume, or capacity, of dim_object measured in units specified in colume_uom. Liquid volumes are only convertible to other liquid volumes.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>liquid_volume_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unit of measurement for liquid volume.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#TaxDetRBO'>
+                              <font color='red'>TaxDetRBO:TaxDetRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many TaxDetRBO.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#InconclRuleRBO'>
+                              <font color='red'>InconclRuleRBO:InconclRuleRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many InconclRuleRBO.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#PrdItemTaxRBO'>
+                              <font color='red'>PrdItemTaxRBO:PrdItemTaxRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							It's a referenced element. For detailed
+							description, please refer referenced element
+							doc.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SvcItemTaxRBO'>
+                              <font color='red'>SvcItemTaxRBO:SvcItemTaxRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							It's a referenced element. For detailed
+							description, please refer referenced element
+							doc.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#NameValPairRBO'>
+                              <font color='red'>NameValPairRBO:NameValPairRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many Name Value Pair objects.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ipi_cst_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							This column captures tributary Situation of IPI.
+				</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ipi_clenq</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							This column indicates Class for IPI.
+				</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ent_pis_cst_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							This column indicates Class for ENT PIS.
+			   </td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ent_cofins_cst_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							This column indicates Class for ENT COFINS.
+			   </td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:TaxDetRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='TaxDetRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for TaxDetRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>legal_message</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the legal message associated to the tax detail.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>LEGAL_MSG</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the legal message associated with the tax code at the line level.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>It stores the tax value.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax basis amount
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_HEAD_EXT,FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_BASIS</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It represents the base of calculation of the tax.
+
+ This field will be populated based on the context.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>modified_tax_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax basis amount
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_HEAD_EXT,FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>MODIFIED_TAX_BASIS</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the taxable basis changed by external tax engine for tax calculation. This happens when a tax rule modifies the taxable basis, mostly in the form of a lower taxable basis. It reflects the taxable basis the tax rate is actually applied on by external tax engine.
+
+This field will be populated based on the context.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_tax_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit tax amount.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>UNIT_TAX_AMT_EXT</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the unit tax amount value returned by taxrules.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_tax_uom</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit of measure of the unit tax amount.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rate_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rate type. Possible
+							Values are
+							P - Percentage
+							F - Fixed Value
+							A - Amount/Per Unit
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax code applied to an
+							item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_HEAD_EXT,FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>It stores the tax code.
+
+ This field will be populated based on the context.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rate</td>
+                          <td halign='left'>number20_10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rate applied to an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_RATE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the tax rate applied.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recoverable_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of recoverable tax
+							amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_REC_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the tax creditable value. It will inform the value of the tax that can be credited. Normally it is the same tax value, however there are some taxes with reduced base and the recoverable value is less.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recovered_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of recovered tax
+							amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>ICMS_CREDIT_VAL</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the recovered amount of tax. This is the icms value removed from the cost.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>reg_pct_margin_value</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of the regulated percent
+							margin value amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_PERC_MVA</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the percentage of the icmsst margin (mva). The mva (margin of aggregated value) is used to determine the base of calculation of icmsst. This field will be used in nfe/sped.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>regulated_price</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of regulated price
+							for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_VAL_MVA</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the value of the icmsst max retail price.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>icms_redu_basis_rate</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							This field indicates the reduction basis rate.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:InconclRuleRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='InconclRuleRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for InconclRuleRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>status</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the status of the suggested rules for the item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_RULE_EXT</td>
+                          <td halign='left'>STATUS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>50</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the status of the tax rule.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rule_code</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rule code.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_RULE_EXT</td>
+                          <td halign='left'>TAX_RULE_CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the code of the tax rule.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rule_description</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rule code description.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_RULE_EXT</td>
+                          <td halign='left'>TAX_RULE_DESC</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the description of the tax rule.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rule_id</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rule id.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_RULE_EXT</td>
+                          <td halign='left'>TAX_RULE_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the tax rule id.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:PrdItemTaxRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='PrdItemTaxRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for PrdItemTaxRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the item code of the item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_origin</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the products orgin.Possible
+							values
+							are 0 - National 1 - Foreign 2 - Foreign
+							(but acquired in
+							national market)
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>fiscal_classification_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Fiscal classification
+							code issued by the government and has tax implication.
+							For e.g: NCM in Brazil.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ipi_exception_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+					Indicates the IPI exception
+					code.
+					</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ext_fiscal_class_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Description is not available.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>is_transformed_item</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates whether product is
+							regular Item or modified by the
+							retailer. Possible values are
+							Y - Regular Item
+							N - Item modified by retailer
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>state_of_manufacture</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Contains the postal abbreviation for the state in which the item
+							is manufactured
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pharma_list_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Refers to the category of the pharmaceutical item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No Column Mapping in RFM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#NameValPairRBO'>
+                              <font color='red'>NameValPairRBO:NameValPairRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many Name Value Pair objects.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:NameValPairRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='NameValPairRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for NameValPairRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the name of the attribute</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No direct Column mapping in RFM. This is a flex field which will be populated based on the requirement</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the value of the attribute</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No direct Column mapping in RFM. This is a flex field which will be populated based on the requirement</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:SvcItemTaxRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='SvcItemTaxRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for SvcItemTaxRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the item code of the item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>federal_service_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the federal service code.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dst_service_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the destination service code.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No column mapping found in RFM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ext_fiscal_class_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the fiscal classification code provided by the tax vendor.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#NameValPairRBO'>
+                              <font color='red'>NameValPairRBO:NameValPairRBO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Represents 1 to many Name Value Pair objects.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:NameValPairRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='NameValPairRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for NameValPairRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the name of the attribute</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No direct Column mapping in RFM. This is a flex field which will be populated based on the requirement</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the value of the attribute</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No direct Column mapping in RFM. This is a flex field which will be populated based on the requirement</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:NameValPairRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='NameValPairRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for NameValPairRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the name of the attribute</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No direct Column mapping in RFM. This is a flex field which will be populated based on the requirement</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the value of the attribute</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>No direct Column mapping in RFM. This is a flex field which will be populated based on the requirement</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:TaxDetRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='TaxDetRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for TaxDetRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>legal_message</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the legal message associated to the tax detail.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>LEGAL_MSG</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the legal message associated with the tax code at the line level.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>It stores the tax value.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax basis amount
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_HEAD_EXT,FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_BASIS</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It represents the base of calculation of the tax.
+
+ This field will be populated based on the context.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>modified_tax_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax basis amount
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_HEAD_EXT,FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>MODIFIED_TAX_BASIS</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the taxable basis changed by external tax engine for tax calculation. This happens when a tax rule modifies the taxable basis, mostly in the form of a lower taxable basis. It reflects the taxable basis the tax rate is actually applied on by external tax engine.
+
+This field will be populated based on the context.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_tax_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit tax amount.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>UNIT_TAX_AMT_EXT</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the unit tax amount value returned by taxrules.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_tax_uom</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit of measure of the unit tax amount.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rate_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rate type. Possible
+							Values are
+							P - Percentage
+							F - Fixed Value
+							A - Amount/Per Unit
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax code applied to an
+							item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_HEAD_EXT,FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>It stores the tax code.
+
+ This field will be populated based on the context.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rate</td>
+                          <td halign='left'>number20_10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rate applied to an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_RATE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the tax rate applied.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recoverable_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of recoverable tax
+							amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_REC_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the tax creditable value. It will inform the value of the tax that can be credited. Normally it is the same tax value, however there are some taxes with reduced base and the recoverable value is less.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recovered_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of recovered tax
+							amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_DETAIL</td>
+                          <td halign='left'>ICMS_CREDIT_VAL</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column stores the recovered amount of tax. This is the icms value removed from the cost.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>reg_pct_margin_value</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of the regulated percent
+							margin value amount for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_PERC_MVA</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the percentage of the icmsst margin (mva). The mva (margin of aggregated value) is used to determine the base of calculation of icmsst. This field will be used in nfe/sped.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>regulated_price</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of regulated price
+							for an item.
+						</td>
+                          <td halign='left'>FM_FISCAL_DOC_TAX_DETAIL_EXT</td>
+                          <td halign='left'>TAX_VAL_MVA</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>It stores the value of the icmsst max retail price.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>icms_redu_basis_rate</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							This field indicates the reduction basis rate.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:FreightRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='FreightRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for FreightRBO in RFM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RFM's Table Name</th>
+                          <th align='left'>RFM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RFM's Column Length</th>
+                          <th align='left'>Is Column Required in RFM's API?</th>
+                          <th align='left'>RFM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the item code of the item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>document_number</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the Fiscal document
+							number.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_value_percentage</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the percentage of the item value from the fiscal document total
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pis_taxable_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates PIS taxable base value of the item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pis_rec_value</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates PIS recovery value.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cofins_taxable_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates COFINS taxable base value of the item.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cofins_rec_value</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates COFINS recovery value.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_utilization</td>
+                          <td halign='left'>varchar25</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates the utilization of the item.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>fiscal_classification_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates the Fiscal classification
+								code issued by the government and has tax implication.
+								For e.g: NCM in Brazil.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SourceTaxRegime'>
+                              <font color='red'>SourceTaxRegime</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+							Indicates the Tax Regime of a Supplier.
+						</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#DestTaxRegime'>
+                              <font color='red'>DestTaxRegime</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>
+								Indicates the Tax Regime of a Location.
+							</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>nature_of_operation</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates the nature of operation.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>source_country_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates the source country id.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dest_country_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates the destination country id.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_tran_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+								Indicates the item transaction code.
+							</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

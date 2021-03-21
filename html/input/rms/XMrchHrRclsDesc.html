@@ -1,0 +1,399 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/XMrchHrRclsDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#XMrchHrRclsDesc'>
+                        <font>XMrchHrRclsDesc</font>
+                      </a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:XMrchHrRclsDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='XMrchHrRclsDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for XMrchHrRclsDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>merch_hier_level</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the level of the merchandise hierarchy.  Valid values are V (division), G (group), D (department), C (class), and S (subclass).</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>hier_type</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicates the level of the merchandise hierarchy.  Valid values are V (division), G (group), D (department), C (class), and S (subclass).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>merch_hier_id</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the merchandise hierarchy ID.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>merch_hier_id</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the merchandise hierarchy ID.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>merch_hier_parent_id</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The parent of the hierarchy identified in the merch_hier_id field.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>merch_hier_parent_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The parent of the hierarchy identified in the merch_hier_id field.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>merch_hier_grandparent_id</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The grandparent of the hierarchy identified in the merch_hier_id field.  This field will only be used when the hierarchy level indicates subclass.  It will contain the number of the department the subclass belongs to.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>merch_hier_grandparent_id</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The grandparent of the hierarchy identified in the merch_hier_id field. This field will only be used when the hierarchy level indicates subclass. It will contain the number of the department to which the subclass belongs.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>merch_hier_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The name of the hierarchy value.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>merch_hier_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The name of the hierarchy value.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>effective_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The date the hierarchy change will become effective.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>effective_date</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The date the hierarchy change will become effective.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>action_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if this field is an addition or modification.  Valid values are A and M.  It is required on a create message and should not be populated on a modify message.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>action_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates whether the field is an addition or modification. Valid values are A and M. It is required in a create message and should not be populated on a modify message.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>buyer</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number of the buyer associated with the entity.  This value must be predefined on the BUYER table.  This field should only hold a value if the hierarchy level indicates division, group, or department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>buyer</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The number of the buyer associated with the entity. This value must be predefined on the BUYER table.  This field should only hold a value if the hierarchy level indicates division, group, or department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>purchase_type</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The code which indicates whether items in the department are normal merchandise (0) or consignment stock (1).  This field will only be used if the hierarchy level indicates department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>purchase_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates whether items in the department are normal merchandise (0) or consignment stock (1).  This field will be used only if the hierarchy level indicates department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total_market_amt</td>
+                          <td halign='left'>number24_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The total market amount that is expected for the entity.  This field will only be used if the hierarchy value indicates division or department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>total_market_amt</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>24</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The total market amount that is expected for the entity. This field only be used only if the hierarchy value indicates division or department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>merch</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number of the merchandiser associated with the entity.  This value must be predefined on the MERCHANT table.  This field should hold a value only if the hierarchy level indicates division, group, or department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>merch</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The number of the merchandiser associated with the entity. This value must be predefined on the MERCHANT table. This field should hold a value only if the hierarchy level indicates division, group, or department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bud_mkup</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The budgeted markup percentage.  The markup percent of cost.  This field will only be used if the hierarchy level indicates department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>bud_mkup</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The budgeted markup percentage. The markup percent of cost. This field will be used only if the hierarchy level indicates department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>profit_calc_type</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number which indicates whether profit will be calculated by direct cost (1) or  retail inventory (2).  This field will only be used if the hierarchy level indicates department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>profit_calc_type</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates whether profit will be calculated by direct cost (1) or retail inventory (2).  This field will be used only if the hierarchy level indicates department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>markup_calc_type</td>
+                          <td halign='left'>varchar22</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The code letter which indicates how markup is calculated in the department.  This field will only be used if the hierarchy level indicates department.  Valid values are C (cost) and R (retail).</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>markup_calc_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The code letter which indicates how markup is calculated in the department. This field will be used only if the hierarchy level indicates department.  Valid values are C (cost) and R (retail).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>otb_calc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The code letter which indicates how OTB is calculated in the department.  Valid values are cost (C) and retail (R).  This field will only be used if the hierarchy value indicates department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>otb_calc_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The code (letter) that indicates how OTB is calculated in the department. Valid values are cost (C) and retail (R). This field will be used only if the hierarchy value indicates department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>max_avg_counter</td>
+                          <td halign='left'>number5</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The maximum count of days with acceptable data to include in an average for items with the department.  This field will only be used if the hierarchy level indicates department.  It is required if RPM is installed.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>max_avg_counter</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>5</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The maximum count of days with acceptable data to include in an average for items with the department. This field will be used only if the hierarchy level indicates department. It is required if RPM is installed.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>avg_tolerance_pct</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The tolerance percentage value used in averaging for items within this value.  This column will hold 70% as 70, not .70.  This field will only be used if the hierarchy value indicates department.  It is required if RPM is installed.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>avg_tolerance_pct</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The tolerance percentage value used in averaging for items within this value. This column will show 70% as 70, not .70. This field will only be used if the hierarchy value indicates department. It is required if RPM is installed.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bud_int</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The budgeted intake percentage.  The percent of the total take that is income.  This field will only be used if the hierarchy value indicates department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>bud_int</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The budgeted intake percentage. The percentage of the total take that is income. This field will be used only if the hierarchy value indicates department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dept_vat_incl_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the default value for the class VAT indicator.  When classes are initially set up they will inherit this value.  This field will only be populated when the hierarchy level indicates department.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>dept_vat_incl_ind</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates the default value for the class VAT indicator. When classes are initially set up they will inherit this value. This field will only be populated when the hierarchy level indicates department.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>class_vat_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if retail is displayed and held with or without VAT for items within a class.  Valid values are Y (yes) and N (no).  This field will only be used if the hierarchy level indicates class.</td>
+                          <td halign='left'>pend_merch_hier</td>
+                          <td halign='left'>class_vat_ind</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates whether retail is displayed and held with or without VAT for items within a class. Valid values are Y and N. This field will be used only if the hierarchy level indicates class.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

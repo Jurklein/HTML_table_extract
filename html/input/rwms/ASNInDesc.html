@@ -1,0 +1,2046 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Warehouse Management System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Warehouse Management System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/ASNInDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which
+            contains name space definitions for the document elements.
+        </font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#ASNInDesc'>
+                        <font>ASNInDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#ASNInPO'>
+                          <font>ASNInPO</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#ASNInCtn'>
+                            <font>ASNInCtn</font>
+                          </a>
+                        </li>
+                        <ul>
+                          <li>
+                            <a href='#ASNInItem'>
+                              <font>ASNInItem</font>
+                            </a>
+                          </li>
+                          <ul>
+                            <li>
+                              <a href='#ASNInUIN'>
+                                <font>ASNInUIN</font>
+                              </a>
+                            </li>
+                          </ul>
+                          <li>
+                            <a href='#CustFlexAttriVo'>
+                              <font>CustFlexAttriVo</font>
+                            </a>
+                          </li>
+                        </ul>
+                        <li>
+                          <a href='#ASNInItem'>
+                            <font>ASNInItem</font>
+                          </a>
+                        </li>
+                        <ul>
+                          <li>
+                            <a href='#ASNInUIN'>
+                              <font>ASNInUIN</font>
+                            </a>
+                          </li>
+                        </ul>
+                      </ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ASNInDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ASNInDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ASNInDesc in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>schedule_nbr</td>
+                          <td halign='left'>number8</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the Schedule identifier number.</td>
+                          <td halign='left'>SCHEDULE</td>
+                          <td halign='left'>SCHD_NBR</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Subscriber uses the schedule number published by RFM. Not used by RWMS Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>auto_receive</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the flag to enable auto receiving at SIM.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_location</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the location that the shipment will be delivered to. RWMS does not utilize this field.</td>
+                          <td halign='left'>transshipment_setup</td>
+                          <td halign='left'>dc_dest_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Used to derive RWMS facility id for subscribe. 
+For publisher transshipment_setup.dc_dest_id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the location type of the to_location field. Valid values are 'S' = store, 'E' = finisher, and 'W' = warehouse.
+                            RWMS does not utilize this field.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in subscribe. Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_store_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the store type of the to_location. This will only be populated if to_loc_type is 'S'. Valid values are: 'C' = company store, 'F' = franchise store. RWMS does not utilize this field.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in subscriber.
+Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_stockholding_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if the to_location is stockholding or not. Only populated if to_loc_type is 'S'. Valid values are: 'Y' = yes, 'N' = no. RWMS does not utilize this.
+                            field.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in subscriber.
+Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_location</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>For transfer and allocation shipments, this field will hold the location from which the shipment was sourced. RWMS does not utilize this field.</td>
+                          <td halign='left'>ship_dest or transshipment_setup</td>
+                          <td halign='left'>dest_id or dc_dest_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Used to derive ship_dest.dest_type for subscribe - Use  transshipment_setup.dc_dest_id for publish</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the location type of the from_location field. Valid values are 'S' = store and 'W' = warehouse. RWMS does not utilize this field.</td>
+                          <td halign='left'>ship_dest</td>
+                          <td halign='left'>dest_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Derived from dest_id and dest type of Ship Destination - Finisher, DC, Store, Virtual for subscriber.
+Always W for publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_store_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the store type of the from_location. This will only be populated if from_location is 'S'. Valid values are: 'C' = company store, 'F' = franchise store. RWMS does not utilize this field.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not Used in Subscribe - Populated with NULL in publish</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_stockholding_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if the from_location is stockholding or not. Only populated if from_location is 'S'. Valid values are: 'Y' = yes, 'N' = no. RWMS does not utilize this field.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not Used in Subscribe - Populated with NULL in publish</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>asn_nbr</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the advance shipping notice number associated with a shipment.</td>
+                          <td halign='left'>asn and asn_upload</td>
+                          <td halign='left'>asn_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Advance ship notice number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>asn_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field is used to determine the ship origin. If asn_type is 'C', ship_origin will be set to '6' (ASN UCC-128) upon insert to the SHIPMENT table. Otherwise, SHIP_ORIGIN is defaulted to '0' (ASN Shipment).</td>
+                          <td halign='left'>asn and asn_upload</td>
+                          <td halign='left'>asn_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Notes ASN type to receive. Value C = container and value P = PO</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_qty</td>
+                          <td halign='left'>number6</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>asn and asn_upload</td>
+                          <td halign='left'>container_qty</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Number of containers of this unit.  Will be 1 normally, but greater than 1 to represent unlabeled containers. E.g. unit_qty= 100, container qty= 10 means 10 unlabeled (not in the container table) containers of casepack 10.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bol_nbr</td>
+                          <td halign='left'>varchar217</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the transaction sequence number on the input message from the receiving PO or transfer process.</td>
+                          <td halign='left'>asn and asn_upload</td>
+                          <td halign='left'>bol_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>17</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The bill of lading number on the asn.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>shipment_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the date the transfer or PO was shipped.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>est_arr_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the estimated arrival date of a vendor PO shipment. It is updated by EDIUP856. It is
+used for vendor/lead time analysis.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS. Pulisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address3</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address4</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address5</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_zip</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>trailer_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>seal_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_code</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the courier that will deliver the shipment.</td>
+                          <td halign='left'>asn and asn_upload</td>
+                          <td halign='left'>carrier_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A code which uniquely identifies a carrier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_service_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the service level code for the courier that will deliver the shipment.</td>
+                          <td halign='left'>N/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>N/A.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vendor_nbr</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the supplier who will provide the merchandise specified in the order. This element is used to validate the order number(s) in ASNInPO (ASNInPO.po_nbr). The order number must be in the table ORDHEAD, in either the ORDER_NO column or VENDOR_ORDER_NO column.</td>
+                          <td halign='left'>po and asn_upload</td>
+                          <td halign='left'>vendor_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>An identifier that uniquely identifies a vendor.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_pay_method</td>
+                          <td halign='left'>varchar22</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the payment terms for freight charges associated with the
+order. Used to validate the order number(s) in ASNInPO (ASNInPO.po_nbr). The ship_pay_method in the message must match the value of the order's SHIP_PAY_METHOD in RMS (ORDHEAD table.) If the message field is blank, the ORDHEAD value must be NULL.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ASNInPO'>
+                              <font color='red'>ASNInPO</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                        </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains any comments about the shipment.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS - Pulisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ASNInPO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ASNInPO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ASNInPO in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>po_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Identifies the order number which relates to the goods delivered in the shipment. Validated against the
+ORDHEAD table, and also the SHIPMENT table if the message applies to an existing shipment.</td>
+                          <td halign='left'>po and asn_po_upload</td>
+                          <td halign='left'>po_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique Purchase Order identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>doc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>po and asn_po_upload</td>
+                          <td halign='left'>doc_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Valid Document Type - Default is 'P'</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>not_after_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the last date that delivery of the order will be accepted.</td>
+                          <td halign='left'>po and asn_po_upload</td>
+                          <td halign='left'>deliv_not_after_date and not_after_date</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The latest date on which the delivery of an order is to be made.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains any comments about the shipment.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by Subscriber. Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ASNInCtn'>
+                              <font color='red'>ASNInCtn</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                        </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ASNInItem'>
+                              <font color='red'>ASNInItem</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                        </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ASNInCtn</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ASNInCtn' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ASNInCtn in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>final_location</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This will be the final destination of the carton. For a cross-dock order this will be the allocation location, otherwise it will be the direct to order location.</td>
+                          <td halign='left'>asn_item and asn_item_upload</td>
+                          <td halign='left'>dest_id and final_location</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Assigned final location for container Id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_id</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the UCC-128 carton number.</td>
+                          <td halign='left'>container and asn_cont_upload</td>
+                          <td halign='left'>container_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique identifier for a container.  A container is a generic thing that can hold merchandise or other containers.  This could be carton, pallet, tote, trolley, laundry basket, etc.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_weight</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container and asn_cont_upload</td>
+                          <td halign='left'>container_weight</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Weight of a container (dimensionless) .</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_length</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container</td>
+                          <td halign='left'>container_length</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The length of a container ( dimensionless)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_width</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container and asn_cont_upload</td>
+                          <td halign='left'>container_width</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Width of a container (dimensionless) .</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_height</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container and asn_cont_upload</td>
+                          <td halign='left'>container_height</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Height of a container (dimensionless).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_cube</td>
+                          <td halign='left'>number12_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container</td>
+                          <td halign='left'>container_cube</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Dimension derived for the multiplied numbers of length, width, and height</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>expedite_flag</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container and asn_cont_upload</td>
+                          <td halign='left'>expedite_flag</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>If NULL defaults to 'N'</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>in_store_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container and asn_cont_upload</td>
+                          <td halign='left'>in_store_date</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Date the container is to be in the store.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_shipment_nbr</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field represents the shipment number that manifest systems use to group multi-container shipments for a carrier. Typically a 1 of 4 type message.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tracking_nbr</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is a unique tracking number that is used to track containers through carriers system.</td>
+                          <td halign='left'>asn_cont_upload</td>
+                          <td halign='left'>tracking_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not populated in RWMS by Subscriber.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>freight_charge</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container and asn_cont_upload</td>
+                          <td halign='left'>freight_charge</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Carton Freight Charges</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>master_container_id</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ASNInItem'>
+                              <font color='red'>ASNInItem</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                        </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains any comments about the shipment container.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used by RWMS. Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ASNInItem</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ASNInItem' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ASNInItem in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>final_location</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Required if the order's pre_mark_ind is 'Y'. Validated against the ALLOC_DETAIL table. There needs to be at least one allocation with the same ORDER_NO that is in the ASNIn message, and the same TO_LOC as the final_location.</td>
+                          <td halign='left'>asn_item and asn_item_upload</td>
+                          <td halign='left'>dest_id and final_location</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Assigned final location for container Id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier for the item. Either vpn, item_id, or ref_item must be specified in the message.</td>
+                          <td halign='left'>po_detail and asn_item_upload</td>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Uniquely identifies the item.  May consist of some combination of SKU, style, color, size, etc.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number of items expected to be received based on the supplier's ASN for this Item/Shipment
+                            combination.</td>
+                          <td halign='left'>asn_item and asn_item_upload</td>
+                          <td halign='left'>unit_qty</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Number of individual units.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>priority_level</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container_item and asn_item_upload</td>
+                          <td halign='left'>priority_level</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Priority level of the item on the container.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vpn</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Used to find the item number, found on the ITEM_SUPPLIER table. Either vpn, item_id, or ref_item must be specified in the message.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>vpn</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Vendor Product Number
+Used in Subscriber to derive item_id and item_upc. 
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_line_nbr</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>order_line_nbr</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order detail information
+Referenced in Subscriber but not used.
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>lot_nbr</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>lot_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The number or identifier of the lot the goods were manufactured in.
+Referenced in Subscriber but not used. 
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ref_item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a reference item to the item field. Either vpn, item_id, or ref_item must be specified in the
+message.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>ref_item</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Reference number associated to the number.
+Used in Subscriber to derive item_id if both item_id or VPN are NULL in message.
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Specifies the transfer or allocation number associated with the shipment/item/carton.</td>
+                          <td halign='left'>container_item and asn_item_upload</td>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A number which uniquely identifies a distribution order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>consumer_direct</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is a Y or N indicator to inform the consuming application if the distro is for a consmer direct order or not.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in subscriber. Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cust_order_nbr</td>
+                          <td halign='left'>varchar248</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is the customer order number that was generated by OMS and contains multiple fulfillment numbers.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in Subscriber.
+Publisher populates with NULL.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>fulfill_order_nbr</td>
+                          <td halign='left'>varchar248</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Based on a customer order - OMS will generate fulfillments to specific locations based on availability. RMS will generate Transfers based on the fulfillment request.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in Subscriber.
+Publisher populates with NULL.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>distro_doc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Valid Document Type</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>distro_doc_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Referenced in subscriber but not used.
+Publisher populates.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_qty</td>
+                          <td halign='left'>number6</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container_item</td>
+                          <td halign='left'>container_qty</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains any comment about the item in the shipment.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used by RWMS. Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ASNInUIN'>
+                              <font color='red'>ASNInUIN</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of Universal Identification Numbers.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ASNInUIN</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ASNInUIN' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ASNInUIN in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>uin</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Universal Identification Number</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ASNInItem</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ASNInItem' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ASNInItem in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>final_location</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Required if the order's pre_mark_ind is 'Y'. Validated against the ALLOC_DETAIL table. There needs to be at least one allocation with the same ORDER_NO that is in the ASNIn message, and the same TO_LOC as the final_location.</td>
+                          <td halign='left'>asn_item and asn_item_upload</td>
+                          <td halign='left'>dest_id and final_location</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Assigned final location for container Id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier for the item. Either vpn, item_id, or ref_item must be specified in the message.</td>
+                          <td halign='left'>po_detail and asn_item_upload</td>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Uniquely identifies the item.  May consist of some combination of SKU, style, color, size, etc.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number of items expected to be received based on the supplier's ASN for this Item/Shipment
+                            combination.</td>
+                          <td halign='left'>asn_item and asn_item_upload</td>
+                          <td halign='left'>unit_qty</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Number of individual units.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>priority_level</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container_item and asn_item_upload</td>
+                          <td halign='left'>priority_level</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Priority level of the item on the container.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vpn</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Used to find the item number, found on the ITEM_SUPPLIER table. Either vpn, item_id, or ref_item must be specified in the message.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>vpn</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Vendor Product Number
+Used in Subscriber to derive item_id and item_upc. 
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_line_nbr</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>order_line_nbr</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order detail information
+Referenced in Subscriber but not used.
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>lot_nbr</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used in RWMS.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>lot_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The number or identifier of the lot the goods were manufactured in.
+Referenced in Subscriber but not used. 
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ref_item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a reference item to the item field. Either vpn, item_id, or ref_item must be specified in the
+message.</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>ref_item</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Reference number associated to the number.
+Used in Subscriber to derive item_id if both item_id or VPN are NULL in message.
+Used by Publisher.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Specifies the transfer or allocation number associated with the shipment/item/carton.</td>
+                          <td halign='left'>container_item and asn_item_upload</td>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A number which uniquely identifies a distribution order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>consumer_direct</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is a Y or N indicator to inform the consuming application if the distro is for a consmer direct order or not.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in subscriber. Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cust_order_nbr</td>
+                          <td halign='left'>varchar248</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is the customer order number that was generated by OMS and contains multiple fulfillment numbers.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in Subscriber.
+Publisher populates with NULL.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>fulfill_order_nbr</td>
+                          <td halign='left'>varchar248</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Based on a customer order - OMS will generate fulfillments to specific locations based on availability. RMS will generate Transfers based on the fulfillment request.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in Subscriber.
+Publisher populates with NULL.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>distro_doc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Valid Document Type</td>
+                          <td halign='left'>asn_item_upload</td>
+                          <td halign='left'>distro_doc_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Referenced in subscriber but not used.
+Publisher populates.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_qty</td>
+                          <td halign='left'>number6</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>container_item</td>
+                          <td halign='left'>container_qty</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains any comment about the item in the shipment.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used by RWMS. Publisher populates with NULL</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ASNInUIN'>
+                              <font color='red'>ASNInUIN</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of Universal Identification Numbers.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ASNInUIN</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ASNInUIN' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ASNInUIN in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>uin</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Universal Identification Number</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

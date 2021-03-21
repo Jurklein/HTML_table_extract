@@ -1,0 +1,763 @@
+<html>
+ <head>
+  <title>
+   RFM_ASNOutCtn
+  </title>
+ </head>
+ <body>
+  <table border="1" cellpadding="3" cellspacing="0" data-name="ASNOutCtn" width="100%">
+   <thead data-theadtype="xsd_thead_type">
+    <tr bgcolor="#D0D0D0">
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Name
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Data Type
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Min Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Max Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Description
+     </th>
+     <th align="left" colspan="6">
+      Application: RFM
+     </th>
+    </tr>
+    <tr bgcolor="#B0C4DE">
+     <th align="left">
+      Table
+     </th>
+     <th align="left">
+      Column Name
+     </th>
+     <th align="left">
+      Data Type
+     </th>
+     <th align="left">
+      Data Length
+     </th>
+     <th align="left">
+      Column Required?
+     </th>
+     <th align="left">
+      Application Description
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td halign="left">
+      final_location
+     </td>
+     <td halign="left">
+      varchar210
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      container_id
+     </td>
+     <td halign="left">
+      varchar230
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Identifies the UCC-128 carton number for shipments originating from the Advance Shipment Notification process as carton shipments.  This field will be zero for all shipments that are not at a carton level.
+     </td>
+     <td halign="left">
+      shipsku
+     </td>
+     <td halign="left">
+      carton
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      20
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Identifies the UCC-128 carton number for shipments originating from the Advance Shipment Notification process as carton shipments.  This field will be zero for all shipments that are not at a carton level.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      container_weight
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      container_length
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      container_width
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      container_height
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      container_cube
+     </td>
+     <td halign="left">
+      number12_2
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      expedite_flag
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates if the shipment should be expedited. For transfers, the value will be 'Y' if the transfer's freight_code is 'E'; otherwise 'N'. For allocations, the field is mapped to alloc_detail.rush_flag.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      in_store_date
+     </td>
+     <td halign="left">
+      xs:dateTime
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains the date to be included in the RMS publication to the RIB for communication to the warehouse. For transfers, the value is always NULL. For allocations, the value is alloc_detail.in_store_date.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      tracking_nbr
+     </td>
+     <td halign="left">
+      varchar2120
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This is a unique tracking number that is used to track containers through carriers system.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      freight_charge
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      master_container_id
+     </td>
+     <td halign="left">
+      varchar220
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#ASNOutItem">
+       <font color="red">
+        ASNOutItem
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       1
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Description is not available.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      comments
+     </td>
+     <td halign="left">
+      varchar22000
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains any comments about the shipment container.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      weight
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Actual weight shipped for the container.
+     </td>
+     <td halign="left">
+      shipsku
+     </td>
+     <td halign="left">
+      weight_expected
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Actual weight shipped for the container.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      weight_uom
+     </td>
+     <td halign="left">
+      varchar24
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Unit of measurement for weight (e.g. pounds, kilograms) that was shipped.
+     </td>
+     <td halign="left">
+      shipsku
+     </td>
+     <td halign="left">
+      weight_expected_uom
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Unit of measurement for weight (e.g. pounds, kilograms) that was shipped.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      carrier_shipment_nbr
+     </td>
+     <td halign="left">
+      varchar2120
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This field represents the shipment number that manifest systems use to group multi-container shipments for a carrier. Typically a 1 of 4 type message.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      original_item_id
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      The ID of the item being replaced.  Populated only when this record is for a substitute item on a customer order.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#CustFlexAttriVo">
+       <font color="red">
+        CustFlexAttriVo:CustFlexAttriVo
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       References a collection of customer flexible attributes.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+

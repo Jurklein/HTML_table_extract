@@ -1,0 +1,2038 @@
+<html>
+ <head>
+  <title>
+   RFM_LineItemRBO
+  </title>
+ </head>
+ <body>
+  <table border="1" cellpadding="3" cellspacing="0" data-name="LineItemRBO" width="100%">
+   <thead data-theadtype="xsd_thead_type">
+    <tr bgcolor="#D0D0D0">
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Name
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Data Type
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Min Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Max Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Description
+     </th>
+     <th align="left" colspan="6">
+      Application: RFM
+     </th>
+    </tr>
+    <tr bgcolor="#B0C4DE">
+     <th align="left">
+      Table
+     </th>
+     <th align="left">
+      Column Name
+     </th>
+     <th align="left">
+      Data Type
+     </th>
+     <th align="left">
+      Data Length
+     </th>
+     <th align="left">
+      Column Required?
+     </th>
+     <th align="left">
+      Application Description
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td halign="left">
+      document_line_id
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates Unique ID of the item of the
+                            fiscal document
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      FISCAL_DOC_LINE_ID
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      10
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      This column stores the fiscal line document sequence number used for identifying the Nota Fiscal detail.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      item_id
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      It's a referenced element. For detailed
+                            description, please refer referenced element
+                            doc..
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      ITEM
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      25
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      This column stores the item in the Nota Fiscal .
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      item_tran_code
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the item transaction code.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      item_type
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the item type.
+     </td>
+     <td halign="left">
+      v_br_item_fiscal_attrib
+     </td>
+     <td halign="left">
+      service_ind
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      if service indicator is 'N', then this field will be 'M' else 'S'
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      quantity
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates quantity of items.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      QUANTITY
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      12,4
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      This column stores the product quantity in the line
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      unit_of_measure
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates unit of measurement of the item.
+     </td>
+     <td halign="left">
+      item_master
+     </td>
+     <td halign="left">
+      standard_uom
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Holds item's standard unit of measure.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      quantity_in_eaches
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates unit of measurement of the item.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No Column Mapping in RFM
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      origin_doc_date
+     </td>
+     <td halign="left">
+      xs:dateTime
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates origin fiscal document date
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_HEADER
+     </td>
+     <td halign="left">
+      ISSUE_DATE
+     </td>
+     <td halign="left">
+      DATE
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This will be populated with issue date of the referenced NF in case of Triangulation and Complementary NFs
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      pack_item_id
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates pack item id.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      FISCAL_DOC_LINE_ID
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      10
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This will be populated with fiscal document line id only incase of pack items
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      total_cost
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates total cost of the item.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      TOTAL_COST
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Contains the total cost of all the merchandise.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      unit_cost
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates unit cost of the item.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      UNIT_COST
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This column stores the cost at which the item is received.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      src_taxpayer_type
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the source taxpayer type.
+     </td>
+     <td halign="left">
+      V_BR_SUPS
+     </td>
+     <td halign="left">
+      cnpj
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      12
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Contains the main supplier's Federal Tax Registration number only in case of Triangulation and Complementary NFs.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      orig_fiscal_doc_number
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the orginal fiscal document
+                            number.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_HEADER
+     </td>
+     <td halign="left">
+      FISCAL_DOC_NO
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      15
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This will be populated with fiscal document number of the referenced NF in case of Triangulation and Complementary NFs
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      orig_fiscal_doc_series
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the original fiscal document
+                            serial number.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_HEADER
+     </td>
+     <td halign="left">
+      SERIES_NO
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      20
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This will be populated with series number of the referenced NF in case of Triangulation and Complementary NFs
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      dim_object
+     </td>
+     <td halign="left">
+      varchar26
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Specific object whose dimensions are specified in this record.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      DIM_OBJECT
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      6
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Defines the dimension object whose dimensions are specified in this record.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      length
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Length of dim_object measured in units specified in lwh_uom.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      LENGTH
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      12,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Contains the length of dimension object measured in units specified in lwh_uom.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      width
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Width of dim_object measured in units specified in lwh_uom.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      width
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Width of dim_object measured in units specified in lwh_uom.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      lwh_uom
+     </td>
+     <td halign="left">
+      varchar24
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Unit of measurement for length, width and height.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      lwh_uom
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      12,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Unit of measurement for length, width and height.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      weight
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Weight of dim_object measured in units specified in weight_uom.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      weight
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      12,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Weight of dim_object measured in units specified in weight_uom.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      net_weight
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Net weight of the dim_object (weight without packaging) measured in units specified in weight_uom.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      NET_WEIGHT
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      12,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Net weight of the dim_object (weight without packaging) measured in units specified in weight_uom.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      weight_uom
+     </td>
+     <td halign="left">
+      varchar24
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Unit of measurement for weight.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      weight_uom
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Unit of measurement for weight.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      liquid_volume
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Liquid volume, or capacity, of dim_object measured in units specified in colume_uom. Liquid volumes are only convertible to other liquid volumes.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      liquid_volume
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      12,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Contains the liquid volume of dimension object measured in units specified in liquid_volume_uom.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      liquid_volume_uom
+     </td>
+     <td halign="left">
+      varchar24
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Unit of measurement for liquid volume.
+     </td>
+     <td halign="left">
+      ITEM_SUPP_COUNTRY_DIM
+     </td>
+     <td halign="left">
+      liquid_volume_uom
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Unit of measurement for liquid volume.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      freight
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Item Freight Value
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      FREIGHT_COST
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This column stores the freight cost shared among the items of the fiscal document
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      insurance
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Item Value of Insurance
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      INSURANCE_COST
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This column stores the insurance cost shared among the items of the fiscal document.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      discount
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Discount Value applied for the item
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      unit_item_disc,unit_header_disc
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      12,4 , 12,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This value is calculated based on the the line level discount per unit at the nf line detail and also taking the header discount into consideration.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      commision
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Item Commission Value
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No column mapping in RFM
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      freight_type
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Type of Freight. Valid
+                            values are 'F'(Full on board) and 'C'(Cost inclusive of freight).
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No column  mapping in RFM.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      other_expenses
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Value of Other Expenses
+                            applicable for the item
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      OTHER_EXPENSES_COST
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This column stores the other cost shared among the items of the fiscal document.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      origin_fiscal_code_opr
+     </td>
+     <td halign="left">
+      varchar212
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the original fiscal code of
+                            operation.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      NF_CFOP
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      12
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This will be populated with nf_cfop of the item in the referenced NF in case of Triangulation and Complementary NFs
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      deduced_fiscal_code_opr
+     </td>
+     <td halign="left">
+      varchar212
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates deduced fiscal code of
+                            operation.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No column mapping in RFM.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      deduce_cfop_code
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicated the deduce transaction code.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No Mapping column in RFM. It is defaulted to 'Y'
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      icms_cst_code
+     </td>
+     <td halign="left">
+      varchar26
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the ICMS CST Code.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      ICMS_CST
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      3
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This column stores the cst code for icms tax code.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      pis_cst_code
+     </td>
+     <td halign="left">
+      varchar26
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the PIS CST Code.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      PIS_CST
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      3
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This column stores the cst code for pis tax code.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      cofins_cst_code
+     </td>
+     <td halign="left">
+      varchar26
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the COFINS CST Code.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      COFINS_CST
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      3
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This column stores the cst code for cofins tax code.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      deduce_icms_cst_code
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates to deduce the ICMS CST Code.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No column mapping in RFM. It is defaulted to 'Y' if icms_cst_code is not null otherwise it will be 'N'
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      deduce_pis_cst_code
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates to deduce the PIS CST Code.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No column mapping in RFM. It is defaulted to 'Y' if pis_cst_code is not null otherwise it will be 'N'
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      deduce_cofins_cst_code
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates to deduce the COFINS CST Code.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No column mapping in RFM. It is defaulted to 'Y' if cofins_cst_code is not null otherwise it will be 'N'
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      recoverable_icmsst
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the recoverable ICMSST amount.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      RECOVERABLE_VALUE
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This is the field where the value of ICMSST will be informed based on the NFs observation. The information stored in these fields will be sent in the API for the historical updates.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      item_cost_contains_cofins
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Inform whether the COFINS is already
+                            includes in the item cost.Possible values
+                            are 'Y' and 'N'. 'Y' if
+                            COFINS is included
+                            in the item cost 'N' if COFINS is not
+                            includes
+                            in the item cost.
+     </td>
+     <td halign="left">
+      VAT_CODES
+     </td>
+     <td halign="left">
+      INCL_NIC_IND
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Indicates if the CONFINS tax is already included in the item's cost.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      recoverable_base_icmsst
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the ICMSST base recoverable
+                            amount.
+     </td>
+     <td halign="left">
+      FM_FISCAL_DOC_DETAIL
+     </td>
+     <td halign="left">
+      RECOVERABLE_BASE
+     </td>
+     <td halign="left">
+      NUMBER
+     </td>
+     <td halign="left">
+      20,4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This is the field where the base of ICMSST will be informed based on the NFs observation. The information stored in these fields will be sent in the API for the historical updates.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      item_cost_contains_pis
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates if PIS is already included in
+                            item
+                            cost.Possible values are 'Y' and 'N'. 'Y' if
+                            PIS is included
+                            in the item cost 'N' if PIS
+                            is not includes in the item cost.
+     </td>
+     <td halign="left">
+      VAT_CODES
+     </td>
+     <td halign="left">
+      INCL_NIC_IND
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Indicates if the PIS tax is already included in the item's cost.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      item_cost_contains_icms
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates if ICMS is already included in
+                            item cost.Possible values are 'Y' or 'N'.
+                            'Y' if PIS is included
+                            in the item cost 'N'
+                            if PIS is not includes in the item cost.
+     </td>
+     <td halign="left">
+      VAT_CODES
+     </td>
+     <td halign="left">
+      INCL_NIC_IND
+     </td>
+     <td halign="left">
+      VARCHAR2
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Indicates if the ICMS tax is already included in the item's cost.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      ipi_cst_code
+     </td>
+     <td halign="left">
+      varchar26
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This column captures tributary Situation of IPI.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      ipi_clenq
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This column indicates Class for IPI.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      imported_item_first_exit
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This column indicates Class for IPI.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      imported_item_retail_src
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This column indicates Class for IPI.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      imported_item_retail_dest
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This column indicates Class for IPI.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      non_taxable_expenses
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This column captures the non-taxable expenses.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      RIB or/and RSB
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Fill this description.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#PrdItemRBO">
+       <font color="red">
+        PrdItemRBO:PrdItemRBO
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       1
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       It's a referenced element. For detailed
+                            description, please refer referenced element
+                            doc.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#SvcItemRBO">
+       <font color="red">
+        SvcItemRBO:SvcItemRBO
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       1
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       It's a referenced element. For detailed
+                            description, please refer referenced element
+                            doc.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#InformTaxRBO">
+       <font color="red">
+        InformTaxRBO:InformTaxRBO
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       It's a referenced element. For detailed
+                            description, please refer referenced element
+                            doc.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#NameValPairRBO">
+       <font color="red">
+        NameValPairRBO:NameValPairRBO
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Represents 1 to many Name Value Pair objects.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       NA
+      </font>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+

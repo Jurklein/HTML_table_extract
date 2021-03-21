@@ -1,0 +1,1708 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Price Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Price Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/StoreDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#StoreDesc'>
+                        <font>StoreDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#AddrDesc'>
+                          <font>AddrDesc</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#CustFlexAttriVo'>
+                            <font>CustFlexAttriVo</font>
+                          </a>
+                        </li>
+                      </ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#StoreHoursDesc'>
+                          <font>StoreHoursDesc</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StoreDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StoreDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StoreDesc in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number to uniquely identify the store.</td>
+                          <td halign='left'>rpm_zone_location</td>
+                          <td halign='left'>location</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This will indicate whether a particular store is a franchise or company store.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_name</td>
+                          <td halign='left'>varchar2150</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the store.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>150</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_name10</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a ten character abbreviation of the store name.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_name3</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains a three character abbreviation of the store name.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_add1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the store primary address.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_add2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the store primary address.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the city of the store primary address.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>county</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the county of the store primary address.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the state of the store primary address.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the country of the store primary address.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_pcode</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the postal code of the store primary address.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_class</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the code letter indicating the class of which the store is a member. Valid values are A through E.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_mgr_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the store manager.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_open_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the date on which the store opened.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_close_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the date on which the store closed.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>acquired_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the date on which the store was acquired.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>remodel_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the date on which the store was last remodeled.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>fax_number</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the fax number for the store.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>phone_number</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phone number for the store.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>email</td>
+                          <td halign='left'>varchar2100</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the email address for the location.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>100</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total_square_ft</td>
+                          <td halign='left'>number8</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the total square footage of the store.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_square_ft</td>
+                          <td halign='left'>number8</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the total square footage of the store's selling area.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>linear_distance</td>
+                          <td halign='left'>number8</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the total space of the location that can be used for merchandise.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stockholding_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column indicates whether the store can hold stock. In a non-multichannel environment this will always be</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>channel_id</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>In a multichannel environment this will contain the channel with which the store is associated. Valid values can be found on the channels table.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_format</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number indicating the format of the store. Valid values are found on the store format table.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>mall_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the mall in which the store is located.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>district</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number of the district in which the store is a member.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>district_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the district.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_zone</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used by RMS.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_desc</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not used by RMS.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>transfer_zone</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the transfer zone in which the store is located. Valid values are located on the tsfzone table.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>description</td>
+                          <td halign='left'>varchar21000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the transfer zone.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1000</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>default_wh</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number of the warehouse that may be used as the default for creating cross-dock masks. This determines which stores are associated with or sourced from a warehouse. Will hold only virtual warehouses in a multi-channel environment.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stop_order_days</td>
+                          <td halign='left'>number3</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number of days before a store closing that the store will stop accepting orders. This column will be used when the store_close_date is defined.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>start_order_days</td>
+                          <td halign='left'>number3</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number of days before the store_open_date that the store will begin accepting orders.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>currency_code</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the currency code under which the store operates.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>lang</td>
+                          <td halign='left'>number6</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column identifies the language to be used for the store.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>integrated_pos_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether the POS system at the store is integrated.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>orig_currency_code</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>holds the original currency of a store after it's adopted the Euro as its main operating currency</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>duns_number</td>
+                          <td halign='left'>varchar29</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This type can hold a number of digits count umber.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>9</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>duns_loc</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the Dun and Bradstreet number to identify the location.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#AddrDesc'>
+                              <font color='red'>AddrDesc:AddrDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>It's a referenced element. For detailed description, please refer referenced element doc.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pricing_loc</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>If this field is null, the new store will not be added to RPM_ZONE_LOCATION table.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If this field is null, the new store will not be added to RPM_ZONE_LOCATION table.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pricing_loc_curr</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This is the currency code of the pricing_loc store.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>org_unit_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Column will contain the organizational unit ID value.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>timezone_name</td>
+                          <td halign='left'>varchar264</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the time zone of the store. For example, 'America/New_York'.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_name_secondary</td>
+                          <td halign='left'>varchar2150</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the secondary name of the store.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_class_description</td>
+                          <td halign='left'>varchar2150</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the description of the class of which the store is a member.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vat_region</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the number of the Value Added Tax region in which this store is contained.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vat_include_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether or not Value Added Tax will be included in the retail prices in the POS files coming from the store. Valid values are Y or N.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>channel_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the channel description with which the store is associated.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_format_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name or description of the store format.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sister_store</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field will hold a store number which will be used to relate the current store to the historical data of an existing store.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tsf_entity_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field will hold id of the transfer entity with which a store is associated.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>auto_rcv</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column will indicate whether the client is allowing automatic receipt for the store. Valid Values are Y (Yes), N (No), D (System Default).</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>remerch_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field identifies stores that are undergoing a significant remerchandising effort. Used only when AIP is integrated with RMS.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>wf_customer_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field identifies numeric id of the customer.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>customer_order_loc_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This Column determines whether the location is customer order location or not.If the indicator is Y then the location can be used by OMS for sourcing/ fulfillment or both else it cannot be used.It is enabled only for the company stores.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>gift_wrapping_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates weathere a gift wrapping needs to be done or not.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>customer_order_ship_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates wheather the customer order has been been shipped from Warehouse or not.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StoreHoursDesc'>
+                              <font color='red'>StoreHoursDesc:StoreHoursDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of store hours details.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:AddrDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='AddrDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for AddrDesc in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>city_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the City Id or Code.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>state_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the State name.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>country_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the Country Name. For e.g Brazil,United States</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>varchar232</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field holds the unique address ID from the source system. For addresses that are interfaced into RMS, it will hold the external system's address ID. For addresses published out of RMS, it will hold RMS's address ID.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>addr_type</td>
+                          <td halign='left'>varchar22</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the type for the address. Valid values (e.g. 01-business, 02-postal) are in the add_type table.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_addr_type_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_addr_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether this address is the primary address for this address type</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>add_1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the first line of the address</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>add_2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the second line of the address.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>add_3</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the thirdline of the address.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the city that is associated with the address.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the postal abbreviation for the state in which the warehouse is located.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the country where the address exists.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>post</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the zip code for the address.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the contact for the supplier at this address.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_phone</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phone number of the contact person at this address.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_telex</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the telex number of the partner or suppliers representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_fax</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the fax number of the contact person at this address.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_email</td>
+                          <td halign='left'>varchar2100</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the email address of the partner or suppliers representative contact.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>oracle_vendor_site_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique identifier of this address in the Oracle Financials systems, if used.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>county</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the county name for the location.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>jurisdiction_code</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>ID associated to the tax jurisdiction of the country-state relationship.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StoreHoursDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StoreHoursDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StoreHoursDesc in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique ID of the store.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>day_no</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates the day of the week for which store timing is being stored.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_open_time</td>
+                          <td halign='left'>varchar28</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the open time for the store.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_close_time</td>
+                          <td halign='left'>varchar28</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the close time for the store.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

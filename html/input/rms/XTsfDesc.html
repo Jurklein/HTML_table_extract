@@ -1,0 +1,644 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/XTsfDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#XTsfDesc'>
+                        <font>XTsfDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#XTsfDtl'>
+                          <font>XTsfDtl</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:XTsfDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='XTsfDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for XTsfDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tsf_no</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Number that uniquely identifies the transfer.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>tsf_no</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Number that uniquely identifies the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The location type of the from location.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>from_loc_type</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The location type of the From location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_loc</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The location number of the from location.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>from_loc</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The location number of the From location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The location type of the to location.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>to_loc_type</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The location type of the To location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_loc</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The location number of the to location.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>to_loc</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The location number of the To location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The earliest date the transfer can be delivered.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>delivery_date</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The earliest date the transfer can be delivered.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dept</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The department number associated with the transfer.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>dept</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The department number associated with the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>routing_code</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>If the freight status is expedite, this is a code indicating more detailed freight info.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>routing_code</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>If the freight status is expedite, this code indicates more detailed freight information.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>freight_code</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A code indicating the freight status of the transfer (e.g. normal, expedite, etc.).</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>freight_code</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A code indicating the freight status of the transfer. Valid values are N (normal), E (expedite), or H (hold).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tsf_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A code indicating the type of transfer (e.g. store requisition, book transfer, etc.).</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>tsf_type</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A code indicating the type of transfer. Valid values are AD, AIP, BT, CF, EG, IC, MR, RAC, RV, or SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#XTsfDtl'>
+                              <font color='red'>XTsfDtl</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Child node - see layout below.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>status</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A code indicating the status of the transfer (e.g. approved, closed, etc.).</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>status</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Status that the transfer can be created in - valid values are I (Input) or A (Approved).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>user_id</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The userid of the user who created the transfer.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>create_id</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The userid of the user who created the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comment_desc</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Comments associated with the transfer.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>comment_desc</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Comments associated with the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>context_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field holds the functional area code to which the transfer relates to. Valid values are PROM and REPAIR.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>context_type</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>varchar2(6)</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Can be used to indicate other information about why the transfer is being created. Valid values for this field are found in the Merchandising code type CNTX.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>context_value</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field holds the value relating to the context type like Promotion number.</td>
+                          <td halign='left'>tsfhead</td>
+                          <td halign='left'>context_value</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field holds the value relating to the context type. For example, if the context was promotion this may contain the promotion number.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:XTsfDtl</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='XTsfDtl' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for XTsfDtl in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique identifier of the item being transferred.</td>
+                          <td halign='left'>tsfdetail</td>
+                          <td halign='left'>item</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The unique identifier of the item being transferred.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tsf_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The total quantity of the item reserved for this transfer at the from location.</td>
+                          <td halign='left'>tsfdetail</td>
+                          <td halign='left'>tsf_qty</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The total quantity of the item reserved for this transfer at the From location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_pack_size</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The supplier pack size for this item/transfer.</td>
+                          <td halign='left'>tsfdetail</td>
+                          <td halign='left'>supp_pack_size</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The supplier pack size for this item/transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>inv_status</td>
+                          <td halign='left'>number2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A code indicating the inventory status for this transfer detail; valid values are found on the inv_status_types table.</td>
+                          <td halign='left'>tsfdetail</td>
+                          <td halign='left'>inv_status</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A code indicating the inventory status for this transfer detail.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not mapped to a database field.  Sometimes used to calculate retail price.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>adjustment_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not mapped to a database field.  Sometimes used to calculate retail price.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Used for intercompany transfers only. Indicates, with adjustment value, how to calculate the selling price based on the basis cost at the shipping location. Valid values are • IA (Increase by Amount), IP (Increase by Percent), DA (Decrease by Amount), DP (Decrease by Percent). or S (Set Price).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>adjustment_value</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not mapped to a database field.  Sometimes used to calculate retail price.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Used for intercompany transfers only. Indicates, with adjustment type, how to calculate the selling price based on the basis cost at the shipping location.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicates the name of the column defined the Group Set view for the transfer header.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a number or character type attribute, this will be the value of that attribute for the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a date type attribute, this will hold the date value that applies for the transfer.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

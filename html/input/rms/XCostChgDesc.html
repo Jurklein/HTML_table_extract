@@ -1,0 +1,488 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/XCostChgDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#XCostChgDesc'>
+                        <font>XCostChgDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#XCostChgHrDtl'>
+                          <font>XCostChgHrDtl</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:XCostChgDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='XCostChgDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for XCostChgDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The item to which the cost change applies.  It can be a parent item, but its item level cannot be greater than its transaction level.  This cannot be a buyer pack.</td>
+                          <td halign='left'>item_supp_country</td>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The item to which the cost change applies. It can be a parent item, but its item level cannot be greater than its transaction level.  This cannot be a buyer pack.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number of the supplier that sources the items the cost change affects.  This value must be predefined on the SUPS table.  This can be a primary or non-primary supplier.</td>
+                          <td halign='left'>item_supp_country</td>
+                          <td halign='left'>supplier</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The number of the supplier that sources the items affected by the cost change. This value must be predefined on the SUPS table. This can be a primary or non-primary supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>origin_country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The identifier of the origin country of the item\supplier to which the cost change will apply.  This value must be predefined on the COUNTRIES table.  This can be the primary or a non-primary country.</td>
+                          <td halign='left'>item_supp_country</td>
+                          <td halign='left'>origin_country_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The identifier of the origin country of the item\supplier to which the cost change applies.  This value must be predefined in the COUNTRIES table. This can be the primary or a non-primary country.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>diff_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The identifier for a differentiator.  This can be used with a parent or grandparent item.  The cost change will "explode" to all the parent's transaction level items with the differentiator.  This value must be predefined on the DIFF_IDS table.</td>
+                          <td halign='left'>item_master</td>
+                          <td halign='left'>diff_1, diff_2,  diff_3,  diff_4</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The identifier for a differentiator. This can be used with a parent or grandparent item. The cost change will "explode" to all the parent's transaction level items with the differentiator. This value must be predefined on the DIFF_IDS table.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_cost</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The new unit cost of the item in the currency specified on the message.  Tables item_supp_country_loc, item_loc_soh, and ordloc can also be updated,  depending on the values in tags hier_level and hier_value.</td>
+                          <td halign='left'>item_supp_country</td>
+                          <td halign='left'>unit_cost</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The new unit cost of the item in the currency specified in the message. The tables, item_supp_country_loc, item_loc_soh, and ordloc  also can be updated, depending on the values in tags, hier_level and hier_value.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recalc_ord_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field will indicate if orders in approved status for items on the cost change will be recalculated with the new cost.  Valid values will be Y (yes) and N (no).</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This field indicates whether orders in Approved status for items on the cost change will be recalculated with the new cost. Valid values are Y  and N.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>currency_code</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The currency code of the unit cost.  This value must be predefined on the CURRENCIES table and must be the currency of the supplier.</td>
+                          <td halign='left'>currency</td>
+                          <td halign='left'>currency_code</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The currency code of the unit cost. This value must be predefined in the CURRENCIES table and must be the currency of the supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>hier_level</td>
+                          <td halign='left'>varchar22</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The hierarchy level of the hierarchy value.  This field will indicate the level of the organizational hierarchy to which the cost change applies.  Valid values are CH (chain), AR (area), RE (region), DI (district), S (store), W (warehouse).</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The hierarchy level of the hierarchy value. This field  indicates the level of the organizational hierarchy to which the cost change applies. Valid values are CH (chain), AR (area), RE (region), DI (district), S (store), W (warehouse).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#XCostChgHrDtl'>
+                              <font color='red'>XCostChgHrDtl</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>purchase_rate</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column contains the percentage of the retail price which will determnie the cost paid to the supplier for a consignment or concession item.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:XCostChgHrDtl</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='XCostChgHrDtl' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for XCostChgHrDtl in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>hier_value</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The hierarchy value at the specified level of the hierarchy which encompasses the locations affected by the cost change.</td>
+                          <td halign='left'>chain, area, region, district, store, wh</td>
+                          <td halign='left'>chain, area, region, district, store, wh</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The hierarchy value at the specified level of the hierarchy that encompasses the locations affected by the cost change.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicates the name of the column defined the Group Set view for the transfer header.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a number or character type attribute, this will be the value of that attribute for the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a date type attribute, this will hold the date value that applies for the transfer.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

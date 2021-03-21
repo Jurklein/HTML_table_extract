@@ -1,0 +1,696 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Store Inventory Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Store Inventory Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/TsfShipDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'></font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#TsfShipDesc'>
+                        <font>TsfShipDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#TsfShipDescNote'>
+                          <font>TsfShipDescNote</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#StrCustAttDesc'>
+                          <font>StrCustAttDesc</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:TsfShipDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='TsfShipDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for TsfShipDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>shipment_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique transfer shipment identifier.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>15</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Shipment unique identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Store identifier of the shipping store.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>STORE_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Store identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_name</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Store name of the shipping store.</td>
+                          <td halign='left'>STORE</td>
+                          <td halign='left'>NAME</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>150</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Store name.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bol_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique bill of lading identifier.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>SHIPMENT_BOL_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The shipment bill of lading id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>asn</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The asn associated with a transfer shipment.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>ASN</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The Advance Shipment Notification number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>status</td>
+                          <td halign='left'>tsf_ship_status</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The current status of a transfer shipment. Valid values are NEW, IN_PROGRESS, SUBMITTED, SHIPPED, CANCELED, UNKNOWN.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>STATUS.</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The status of the Shipment.  1-New,2-In Progress,3-Submitted,4-Shipped,5-Canceled</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>destination_type</td>
+                          <td halign='left'>tsf_ship_dest_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The destination type of the destination the transfer shipment is being shipped to. Valid values are FINISHER, STORE, WAREHOUSE, UNKNOWN.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>DESTINATION_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The shipment destination type. 1- Store, 3 Warehouse, 4 - Finisher</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>destination_name</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The destination name of the destination the transfer shipment is being shipped to.</td>
+                          <td halign='left'>WAREHOUSE,PARTNER,STORE</td>
+                          <td halign='left'>NAME</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>150 , 240</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Destination entity name.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>not_after_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The stipulated deadline that transfer shipment must be shipped.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>NOT_AFTER_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The not after date for the shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>authorization_code</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The authorization code for processing this shipment.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>AUTHORIZATION_CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The authorization number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>adhoc_doc_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique adhoc transfer document identifier.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>ADHOC_DOCUMENT_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>15</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Refer to adhoc transfer document identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>create_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The user who created the shipment.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>CREATE_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The user who created the Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>update_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The user who last updated the shipment.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>UPDATE_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The user who last updated the Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>submit_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The user who approved the shipment.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>SUBMIT_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The user who submitted the Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dispatch_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The user who last updated the shipment.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>DISPATCH_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The user who dispatched the Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>create_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The date the transfer shipment was created.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>CREATE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The create date of the Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>last_update_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The date the transfer shipment was last updated.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>UPDATE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The date when the Shipment was updated</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>submit_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The date the transfer shipment was submitted.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>SUBMIT_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The date when the Shipment was submitted</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dispatch_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The date the transfer shipment was dispatched.</td>
+                          <td halign='left'>TSF_SHIP</td>
+                          <td halign='left'>DISPATCH_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The date when the Shipment was dispatched</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>num_of_cartons</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number of containers within the shipment.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Number of containers associated with shipment.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>skus</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number of items in the transfer shipment.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The number of lines in the transfer shipement</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>num_of_docs</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number of transfer documents associated with the transfer shipment.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Number of transfer document associated with shipment.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#TsfShipDescNote'>
+                              <font color='red'>TsfShipDescNote</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1000</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of transfer shipment notes that will be added to the transfer shipment.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrCustAttDesc'>
+                              <font color='red'>StrCustAttDesc:StrCustAttDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>50</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Custom attributes associated to the transfer shipment.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:TsfShipDescNote</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='TsfShipDescNote' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for TsfShipDescNote in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>note</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Note associated to the vendor shipment.</td>
+                          <td halign='left'>NOTES</td>
+                          <td halign='left'>TEXT</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>3000</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Notes/comments added on shipment.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrCustAttDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrCustAttDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrCustAttDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>label</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute label.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_text</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_decimal</td>
+                          <td halign='left'>number18_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the decimal value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_long</td>
+                          <td halign='left'>number18</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the long value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>admin_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique identifier for the attribute admin record. If not present, indicates a display only non-editable value.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

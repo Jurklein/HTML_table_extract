@@ -1,0 +1,334 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Warehouse Management System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Warehouse Management System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/WOInRef/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#WOInRef'>
+                        <font>WOInRef</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#WOInDtlRef'>
+                          <font>WOInDtlRef</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:WOInRef</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='WOInRef' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for WOInRef in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>wo_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Exists in code but not used.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_no</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>inbound_work_order</td>
+                          <td halign='left'>po_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique Purchase Order identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#WOInDtlRef'>
+                              <font color='red'>WOInDtlRef</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:WOInDtlRef</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='WOInDtlRef' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for WOInDtlRef in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>wh</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>inbound_work_order</td>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Uniquely identifies the item.  May consist of some combination of SKU, style, color, size, etc.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The location type of the final destination location.  Valid values are:'S' - Store 'W' - Warehouse</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used by RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>location</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The final destination of the merchandise.  If the item is predistributed this location will be the store/warehouse on the allocation.  If not, it will be the same warehouse as in the wh column.</td>
+                          <td halign='left'>inbound_work_order</td>
+                          <td halign='left'>dest_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A number which uniquely identifies a destination to which the DC delivers goods</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>seq_no</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>inbound_work_order</td>
+                          <td halign='left'>wip_seq_nbr</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Order in which WIP Codes are processed</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>wip_code</td>
+                          <td halign='left'>varchar29</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>inbound_work_order</td>
+                          <td halign='left'>wip_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>9</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Work in process code setup in wip_code table</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

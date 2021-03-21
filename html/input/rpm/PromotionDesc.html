@@ -1,0 +1,1366 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Price Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Price Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/PromotionDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which
+            contains name space definitions for the document elements.
+        </font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#PromotionDesc'>
+                        <font>PromotionDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#LocationList'>
+                          <font>LocationList</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#ListGroup'>
+                          <font>ListGroup</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#ListDtl'>
+                            <font>ListDtl</font>
+                          </a>
+                        </li>
+                        <ul>
+                          <li>
+                            <a href='#DiscountLadder'>
+                              <font>DiscountLadder</font>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#ItemList'>
+                              <font>ItemList</font>
+                            </a>
+                          </li>
+                        </ul>
+                      </ul>
+                      <li>
+                        <a href='#ItemLocSimpleRet'>
+                          <font>ItemLocSimpleRet</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#CreditDetail'>
+                          <font>CreditDetail</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:PromotionDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='PromotionDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for PromotionDesc in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion ID</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>promo_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>promotion ID</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_name</td>
+                          <td halign='left'>varchar2160</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Header Name</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>promo_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>160</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>promotion header name</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_description</td>
+                          <td halign='left'>varchar2640</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Header Description</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>promo_desc</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>640</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>promotion header description</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_comp_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Component Id</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>promo_comp_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>promotion component ID</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_comp_desc</td>
+                          <td halign='left'>varchar2160</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Component Name</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>promo_comp_desc</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>160</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Promotion Component Description</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_comp_type</td>
+                          <td halign='left'>number2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Component Type</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>promo_comp_type</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>promotion component type - (0) multi-buy, (1) simple, (2) threshold, (3) finance, (4) transaction</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promo_dtl_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Component Detail Id</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>promo_dtl_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>promotion component detail ID</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>apply_order</td>
+                          <td halign='left'>number6</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Application Order of the Promotion</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>apply_order</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>the order the promotion will be applied if there are
+multiple promotions</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>start_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Start Date of Promotion Component Detail</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>start_date</td>
+                          <td halign='left'>date</td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>start date of the promotion detail</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>end_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>End Date of Promotion Component Detail</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>end_date</td>
+                          <td halign='left'>date</td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>end date of the promotion component detail
+			</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>apply_to_code</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Determines if the promo discount will be applied to regular, clearance retail or both</td>
+                          <td halign='left'>RPM_PROMO_DTL_PAYLOAD</td>
+                          <td halign='left'>APPLY_TO_CODE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Determines if the promotional discount will be applied to regular retail (0), clearance retail (1) or both (2)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>discount_limit</td>
+                          <td halign='left'>number3</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number of times that the promotion can be applied to a transaction.</td>
+                          <td halign='left'>RPM_PROMO_DTL_PAYLOAD</td>
+                          <td halign='left'>DISCOUNT_LIMIT</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Limit of the discount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>exception_parent_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Parent promotion component detail ID if the detail is
+an exception</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>exception_parent_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Parent promotion component detail ID if the detail is
+an exception</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#LocationList'>
+                              <font color='red'>LocationList</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                            </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ListGroup'>
+                              <font color='red'>ListGroup</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                            </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ItemLocSimpleRet'>
+                              <font color='red'>ItemLocSimpleRet</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                            </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>customer_type_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Customer Type</td>
+                          <td halign='left'>rpm_promo_dtl_payload</td>
+                          <td halign='left'>customer_type</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the customer type of the promotion component</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CreditDetail'>
+                              <font color='red'>CreditDetail</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                        </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>threshold_qual_type</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The Threshold qualification type.  A value of 1 means threshold level and a value of 0 means item level.</td>
+                          <td halign='left'>RPM_PROMO_DTL_PAYLOAD</td>
+                          <td halign='left'>THRESH_QUALIFICATION_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>indicates the level of threshold promos, valid values are 0 for item level and 1 for threshold level</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:LocationList</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='LocationList' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for LocationList in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>location</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Location Number</td>
+                          <td halign='left'>RPM_PROMO_ITEM_LOC_SR_PAYLOAD</td>
+                          <td halign='left'>LOCATION</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Location</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>loc_type</td>
+                          <td halign='left'>varchar22</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Location Type</td>
+                          <td halign='left'>rpm_promo_location_payload</td>
+                          <td halign='left'>location_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>location type</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ListGroup</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ListGroup' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ListGroup in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>listgroup_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Detail List Group ID</td>
+                          <td halign='left'>rpm_promo_dtl_list_grp_payload</td>
+                          <td halign='left'>promo_dtl_list_grp_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Promotion Detail List Group ID</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ListDtl'>
+                              <font color='red'>ListDtl</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                            </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ListDtl</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ListDtl' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ListDtl in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>listdtl_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Promotion Detail List ID</td>
+                          <td halign='left'>RPM_PROMO_DTL_LIST_PAYLOAD</td>
+                          <td halign='left'>PROMO_DTL_LIST_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Promotion Detail List Id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>reward_application</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Reward Application</td>
+                          <td halign='left'>RPM_PROMO_DTL_LIST_PAYLOAD</td>
+                          <td halign='left'>REWARD_APPLICATION</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>determine whether the reward is embedded in this list or is shared among all lists for the group</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>description</td>
+                          <td halign='left'>varchar2160</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description for the promo detail list</td>
+                          <td halign='left'>RPM_PROMO_DTL_LIST_PAYLOAD</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Description</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#DiscountLadder'>
+                              <font color='red'>DiscountLadder</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                            </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#ItemList'>
+                              <font color='red'>ItemList</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.
+                            </font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>price_range_min</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains price range promotion minimum valid retail value</td>
+                          <td halign='left'>RPM_PROMO_DTL_PRC_RNG_PAYLOAD</td>
+                          <td halign='left'>BUY_LIST_MIN, GET_LIST_MIN</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20, 4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Minimum promotion price for the buy/get list item</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>price_range_max</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains price range promotion maximum valid retail value</td>
+                          <td halign='left'>RPM_PROMO_DTL_PRC_RNG_PAYLOAD</td>
+                          <td halign='left'>BUY_LIST_MAX GET_LIST_MAX</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20, 4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Maximum promotion price for the buy/get list item</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:DiscountLadder</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='DiscountLadder' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for DiscountLadder in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chg_type</td>
+                          <td halign='left'>number2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Change Type</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>CHANGE_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Change Type</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chg_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Change Amount</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>CHANGE_AMOUNT</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Change Amount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chg_currency</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Currency Code</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>CHANGE_CURRENCY</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Change Currency</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chg_percent</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Change Percent</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>CHANGE_PERCENT</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Change Percent</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chg_selling_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Change Selling UOM</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>CHANGE_SELLING_UOM</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Selling UOM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>qual_type</td>
+                          <td halign='left'>number2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Qualification Type</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>QUAL_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Qualification Type - (0) all, (1) amount, (2) quantity</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>qual_value</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Qualification Value</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>QUAL_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Qualification Value</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chg_duration</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Change duration</td>
+                          <td halign='left'>RPM_PROMO_DISC_LDR_PAYLOAD</td>
+                          <td halign='left'>DURATION</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Change Duration</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ItemList</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ItemList' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ItemList in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_num</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Item Number</td>
+                          <td halign='left'>RPM_PROMO_ITEM_PAYLOAD</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Item Number</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ItemLocSimpleRet</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ItemLocSimpleRet' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ItemLocSimpleRet in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_num</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Transaction Item Identifier</td>
+                          <td halign='left'>RPM_PROMO_ITEM_LOC_SR_PAYLOAD</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Item Number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>location</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Store ID</td>
+                          <td halign='left'>RPM_PROMO_ITEM_LOC_SR_PAYLOAD</td>
+                          <td halign='left'>LOCATION</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Location</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_retail</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Selling retail of the item</td>
+                          <td halign='left'>RPM_PROMO_ITEM_LOC_SR_PAYLOAD</td>
+                          <td halign='left'>selling_retail</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Selling Retail</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Selling UOM of the item</td>
+                          <td halign='left'>RPM_PROMO_ITEM_LOC_SR_PAYLOAD</td>
+                          <td halign='left'>selling_uom</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Selling UOM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>effective_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Specifies when the given selling retail is to take effect for the given item and location.</td>
+                          <td halign='left'>RPM_PROMO_ITEM_LOC_SR_PAYLOAD</td>
+                          <td halign='left'>EFFECTIVE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Specifies when the given selling retail is to take effect for the given item and location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_currency</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the currency code that should match the store's currency code.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ref_promo_dtl_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Referenced Promotion Detail ID</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CreditDetail</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CreditDetail' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CreditDetail in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>credit_detail_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>N/A</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>credit_type</td>
+                          <td halign='left'>varchar240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Credit Card Type</td>
+                          <td halign='left'>RPM_PROMO_FIN_DTL_PAYLOAD</td>
+                          <td halign='left'>CARD_TYPE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Credit Card Type</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bin_number_from</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>BIN Number From Value</td>
+                          <td halign='left'>RPM_PROMO_FIN_DTL_PAYLOAD</td>
+                          <td halign='left'>BIN_FROM_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Bin From Value.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bin_number_to</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>BIN Number To Value</td>
+                          <td halign='left'>RPM_PROMO_FIN_DTL_PAYLOAD</td>
+                          <td halign='left'>BIN_TO_VALUE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Bin To Value</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>commision_rate</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Commission Rate</td>
+                          <td halign='left'>RPM_PROMO_FIN_DTL_PAYLOAD</td>
+                          <td halign='left'>COMMISSION_RATE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Commission Rate</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar2160</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Comments</td>
+                          <td halign='left'>RPM_PROMO_FIN_DTL_PAYLOAD</td>
+                          <td halign='left'>COMMENTS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1000</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Comments</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

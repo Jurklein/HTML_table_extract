@@ -1,0 +1,556 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/AddrDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#AddrDesc'>
+                        <font>AddrDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:AddrDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='AddrDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for AddrDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>city_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the City Id or Code.</td>
+                          <td halign='left'>N/A</td>
+                          <td halign='left'>N/A</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates the City Id or Code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>state_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the State name.</td>
+                          <td halign='left'>state</td>
+                          <td halign='left'>description</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the full name of the state.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>country_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the Country Name. For e.g Brazil,United States</td>
+                          <td halign='left'>country</td>
+                          <td halign='left'>country_desc</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the name of the country.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>varchar232</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field holds the unique address ID from the source system. For addresses that are interfaced into RMS, it will hold the external system's address ID. For addresses published out of RMS, it will hold RMS's address ID.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>addr_key</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>11,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column contains a unique number used to distinguish between different addresses.For addresses that are interfaced into RMS, it will hold the external system's address ID. 
+For addresses published out of RMS, it will hold RMS's address ID.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>addr_type</td>
+                          <td halign='left'>varchar22</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the type for the address. Valid values (e.g. 01-business, 02-postal) are in the add_type table.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>addr_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column indicates the type for the address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_addr_type_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description is not available.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_addr_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether this address is the primary address for this address type</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>primary_addr_ind</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column indicates whether the address is the primary address for the address type.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>add_1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the first line of the address</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>add_1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column contains the first line of the address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>add_2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the second line of the address.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>add_2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the second line of the address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>add_3</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the thirdline of the address.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>add_3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the third line of the address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the city that is associated with the address.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>city</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column contains the name of the city that is associated with the address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the postal abbreviation for the state in which the warehouse is located.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>state</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the state abbreviation for the address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the country where the address exists.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>country_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column contains the country where the address exists.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>post</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the zip code for the address.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>post</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the zip code for the address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the name of the contact for the supplier at this address.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>contact_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the name of the contact for the supplier at this address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_phone</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phone number of the contact person at this address.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>contact_phone</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the phone number of the contact person at this address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_telex</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the telex number of the partner or suppliers representative contact.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>contact_telex</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the telex number of the partner or suppliers representative contact.contact.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_fax</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the fax number of the contact person at this address.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>contact_fax</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the fax number of the contact person at this address.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>contact_email</td>
+                          <td halign='left'>varchar2100</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the email address of the partner or suppliers representative contact.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>contact_email</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>100</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column contains the email address of the partner or suppliers representative contact.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>oracle_vendor_site_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique identifier of this address in the Oracle Financials systems, if used.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>oracle_vendor_site_id</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>15,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column will only be used for the Oracle Financial Interfaces.  It holds the value of the Oracle vendor site ID for a supplier address.  This Oracle vendor site ID is the unique identifier of the address on the Oracle side, it must be stored on the RMS addr table to allow updates from Oracle.  This site ID can be found on the Oracle po_vendor_sites table.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>county</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the county name for the location.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>county</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This column holds the county name for the location.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>jurisdiction_code</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>ID associated to the tax jurisdiction of the country-state relationship.</td>
+                          <td halign='left'>addr</td>
+                          <td halign='left'>jurisdiction_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Identifies the jurisdiction code for the country-state relationship.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicates the name of the column defined the Group Set view for the transfer header.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a number or character type attribute, this will be the value of that attribute for the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a date type attribute, this will hold the date value that applies for the transfer.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

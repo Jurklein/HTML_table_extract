@@ -1,0 +1,822 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Store Inventory Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Store Inventory Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/StrFordDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'></font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#StrFordDesc'>
+                        <font>StrFordDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#StrFordItm'>
+                          <font>StrFordItm</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#StrCustAttDesc'>
+                          <font>StrCustAttDesc</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrFordDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrFordDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrFordDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>int_fulfillment_order_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Internal fulfillment order identifier</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique SIM identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ext_fulfillment_order_id</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>External fulfillment order identifier</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>EXTERNAL_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>External identifier for the fulfillment order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>customer_order_id</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Customer order identifier</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>CUST_ORDER_ID</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>External identifier of the customer order being fulfilled.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_type</td>
+                          <td halign='left'>str_ford_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Type of order Valid values are LAYAWAY, PICKUP_AND_DELIVERY, CUSTOMER_ORDER, PENDING_PURCHASE, SPECIAL_ORDER, WEB_ORDER, UNKNOWN.</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>ORDER_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>4,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The type of fulfillment order. Valid values are
+1- Layaway,
+2- Pickup and Delivery Orders,
+3- Customer Order,
+4- Pending Purchase,
+5- Special Order,
+6- Web Order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>status</td>
+                          <td halign='left'>str_ford_status</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Current status Valid values are NEW, IN_PROGRESS, COMPLETED, CANCELED, UNKNOWN.</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>STATUS</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>4,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicates the status of the fulfillment order. Valid values are
+0 - New, 1 - In Progress, 2 - Completed, 3 - Canceled, 4- Active</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>create_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date the fulfillment order was created</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>CREATE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The date this fulfillment order was created in SIM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>release_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date the fulfillment order is to be released</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>RELEASE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The date in which the fulfillment order must be shipped or picked up in the store.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date the fulfillment order is to be delivered</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>DELIVERY_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The date in which the fulfillment order is to be delivered.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_type</td>
+                          <td halign='left'>str_ford_delivery_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Delivery type Valid values are PICKUP, SHIPMENT, UNKNOWN.</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>DELIVERY_TYPE</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>4,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Identifier that represents the type of delivery for this order. Valid values are
+1- Customer Pickup
+2- Ship to Customer</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_carrier_code</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Delivery carrier code</td>
+                          <td halign='left'>SHIPMENT_CARRIER</td>
+                          <td halign='left'>CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique code identifier for a carrier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_service_code</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Delivery carrier service code</td>
+                          <td halign='left'>SHIPMENT_CARRIER_SERVICE</td>
+                          <td halign='left'>CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique identifier that represents the delivery service</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>allow_partial_delivery</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if the order allows for partial delivery, false otherwise,</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>ALLOW_PARTIAL_DELIVERY</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicator whether all items on the order must be there to be delivered.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Comments about the fulfillment order.</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>COMMENTS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Comments defined by the external system for this order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>customer_id</td>
+                          <td halign='left'>varchar214</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Customer identifier</td>
+                          <td halign='left'>FUL_ORD</td>
+                          <td halign='left'>CUSTOMER_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>14</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Customer identifier for this fulfillment order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>hold_location</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Location the order is being held for pickup or delivery.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrFordItm'>
+                              <font color='red'>StrFordItm</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>5000</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Collection of fulfillment order line items</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrCustAttDesc'>
+                              <font color='red'>StrCustAttDesc:StrCustAttDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>50</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Custom attributes associated to the fulfillment order.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrFordItm</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrFordItm' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrFordItm in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>line_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Line identifier generated within the system.</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique SIM identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>SKU number</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>ITEM_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Item identifier for this line item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>line_number</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A given unique line number within the order to identify the line in the case of duplicate items.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>description</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Description of this item</td>
+                          <td halign='left'>STORE_ITEM</td>
+                          <td halign='left'>SHORT_DESCRIPTION, LONG_DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>255, 400</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>long/ short description of the item</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>substitute_item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>SKU for substituted item</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>SUBSTITUTE_LINE_ITEM_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Identifier of the line item this line item was substituted for.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>preferred_uom</td>
+                          <td halign='left'>varchar240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Preferred unit of measure</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>PREFERRED_UOM</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Preferred unit of measure of this line item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>standard_uom</td>
+                          <td halign='left'>varchar240</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Standard unit of measure</td>
+                          <td halign='left'>ITEM</td>
+                          <td halign='left'>UNIT_OF_MEASURE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>unit of measure which the stock for this item is tracked at the coporate level.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_qty</td>
+                          <td halign='left'>number9_2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Quantity ordered in standard unit of measure.</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>QUANTITY_ORDERED</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The quantity ordered of this line item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>picked_qty</td>
+                          <td halign='left'>number9_2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Quantity picked in standard unit of measure.</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>QUANTITY_PICKED</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The quantity picked of this line item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivered_qty</td>
+                          <td halign='left'>number9_2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Quantity delivered in standard unit of measure.</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>QUANTITY_DELIVERED</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The quantity delivered of this line item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>canceled_qty</td>
+                          <td halign='left'>number9_2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Quantity canceled in standard unit of measure.</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>QUANTITY_CANCELED</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The quantity canceled of this line item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>remaining_qty</td>
+                          <td halign='left'>number9_2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Quantity remaining/unfulfilled in standard unit of measure</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>QUANTITY_PICKED, QUANTITY_DELIVERED</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>picked quantity subtract delivered quantity</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>reserved_qty</td>
+                          <td halign='left'>number9_2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Quantity reserved in standard unit of measure.</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>QUANTITY_RESERVED</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>QUANTITY RESERVED</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>allow_substitution</td>
+                          <td halign='left'>xs:boolean</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>True if this item allows substitutions, false if it does not.</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>ALLOW_SUBSTITUTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>True if this item allows substitutions, false if it does not.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>create_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date this line item was created</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>CREATE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The date this line item was created.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>last_update_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date this line item was last updated</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>UPDATE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The date this line item was last modified.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar2512</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Comments about this line item</td>
+                          <td halign='left'>FUL_ORD_LINE_ITEM</td>
+                          <td halign='left'>COMMENTS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Comments on this line item defined by an external system.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrCustAttDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrCustAttDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrCustAttDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>label</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute label.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_text</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the string value of the attribute.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_decimal</td>
+                          <td halign='left'>number18_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the decimal value of the attribute.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_long</td>
+                          <td halign='left'>number18</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the long value of the attribute.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>admin_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique identifier for the attribute admin record. If not present, indicates a display only non-editable value.</td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                          <td halign='left'></td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

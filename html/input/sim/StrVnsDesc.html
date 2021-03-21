@@ -1,0 +1,1045 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Store Inventory Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Store Inventory Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/StrVnsDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'></font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#StrVnsDesc'>
+                        <font>StrVnsDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#StrVnsBol'>
+                          <font>StrVnsBol</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#StrVnsBolCtn'>
+                            <font>StrVnsBolCtn</font>
+                          </a>
+                        </li>
+                      </ul>
+                      <li>
+                        <a href='#StrVnsNote'>
+                          <font>StrVnsNote</font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#StrCustAttDesc'>
+                          <font>StrCustAttDesc</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrVnsDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrVnsDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrVnsDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>shipment_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>15,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The unique identifier for the RTV Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Store identifier of store that is returning the stock</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>STORE_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The store id the RTV Shipment is created from</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier_id</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Supplier identifier.</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>SUPPLIER_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The supplier to which the RTV Shipment is created</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>status</td>
+                          <td halign='left'>rtv_ship_status</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Current status Valid values are NEW, IN_PROGRESS, SUBMITTED, SHIPPED, CANCELED, UNKNOWN.</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>STATUS</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The status of the RTV Shipment. Valid values: 1- New, 2- In progress, 3- Submitted, 4- Shipped, 5- Canceled</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>authorization_code</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Authorization code</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>AUTHORIZATION_CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The vendor authorization number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>not_after_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date after which the vendor shipment in no longer valid</td>
+                          <td halign='left'>RTV</td>
+                          <td halign='left'>NOT_AFTER_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The return is not allowed after this date</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>context_id</td>
+                          <td halign='left'>number18</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Context type identifier.</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>CONTEXT_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>18</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The context identifier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>context_value</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Context type value.</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>CONTEXT_VALUE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field holds value related to the context type.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>doc_internal_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Vendor return document unique identifier</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>RTV_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>15,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>unique identifier of a vendor return</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>doc_external_id</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>External system identifier of the vendor return document</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>RTV_EXTERNAL_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The external identifier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>create_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date the vendor shipment was created in GMT timezone</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>CREATE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The create date of the RTV Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>create_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Create user of the vendor shipment</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>CREATE_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The user who created the RTV Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>update_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Update the vendor shipment was dispatched in GMT timezone</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>UPDATE_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The date when the RTV Shipment was updated</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>update_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Update user of the vendor shipment</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>UPDATE_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The user who last updated the RTV Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>submit_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date the vendor shipment was submitted in GMT timezone</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>SUBMIT_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The date when the RTV Shipment was submitted</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>submit_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Submit user of the vendor shipment</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>SUBMIT_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The user who submitted the RTV Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dispatch_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date the vendor shipment was dispatched in GMT timezone</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>DISPATCH_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The date when the RTV Shipment was dispatched</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dispatch_user</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Dispatch user of the vendor shipment</td>
+                          <td halign='left'>RTV_SHIP</td>
+                          <td halign='left'>DISPATCH_USER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The user who dispatched the RTV Shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrVnsBol'>
+                              <font color='red'>StrVnsBol</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Bill of lading associated to the vendor shipment.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrVnsNote'>
+                              <font color='red'>StrVnsNote</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1000</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Notes associated to the vendor shipment.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrCustAttDesc'>
+                              <font color='red'>StrCustAttDesc:StrCustAttDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>50</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Custom attributes associated to the vendor shipment.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrVnsBol</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrVnsBol' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrVnsBol in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bol_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Bill of lading unique identifier</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>this field contains the sequence-based internal identifier for the bill of lading</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_of_lading_motive_id</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Motive identifier</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>MOTIVE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field contains the motive</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_of_lading_tax_id</td>
+                          <td halign='left'>varchar218</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Tax identifier</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>TAX_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>18</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field contains the tax id of the supplier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>requested_pickup_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date pickup is requested</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>REQUESTED_PICKUP_DATE</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'></td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>the field contains the requested pickup date</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_type</td>
+                          <td halign='left'>rtv_ship_carrier_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Type of carrier used for shipment Valid values are SENDER, RECEIVER, THIRD_PARTY, UNKNOWN.</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>CARRIER_ROLE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>this field contains the type of carrier for the shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_code</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Carrier code of carrier responsible for shipment</td>
+                          <td halign='left'>SHIPMENT_CARRIER</td>
+                          <td halign='left'>CODE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Unique code identifier for a carrier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_service_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Service code of shipment service being used</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>SHIP_CARRIER_SERVICE_ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10,0</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Identifier representing the carrier service for the shipment</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_name</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Name of the carrier</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>THIRD_PARTY_NAME</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field contains the name of the third party</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_address</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Address of the carrier</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>THIRD_PARTY_ADDRESS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field contains the address of the third party</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_to_address_type</td>
+                          <td halign='left'>rtv_ship_address_type</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Address type of the destination address Valid values are BUSINESS, POSTAL, RETURNS, ORDER, INVOICE, REMITTANCE, BILLING, DELIVERY, UNKNOWN.</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>SHIP_TO_ADDRESS_TYPE</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>2</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>"The address type for the ship to address. valid values 01 - Business Address,02 - Postal Address,03 - Return Address,04 - Order Address,05 - Invoice Address,06 - Remittance Address,07 - Billing Address, 08 - Delivery Address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>alternate_ship_to_address</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Alternate ship to address if substituted for normal address</td>
+                          <td halign='left'>SHIPMENT_BOL</td>
+                          <td halign='left'>ALT_DESTINATION_ADDRESS</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>this field contains the alternate destination address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#StrVnsBolCtn'>
+                              <font color='red'>StrVnsBolCtn</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1000</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Container shipment info.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrVnsBolCtn</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrVnsBolCtn' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrVnsBolCtn in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Container identifier (shipping number).</td>
+                          <td halign='left'>RTV_SHIP_CARTON</td>
+                          <td halign='left'>ID</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>15,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The unique identifier for the RTV shipment carton/container</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_label</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Container label (barcode).</td>
+                          <td halign='left'>RTV_SHIP_CARTON</td>
+                          <td halign='left'>EXTERNAL_ID</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The external identifier</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>package_weight</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The weight of the package measured by package weight uom.</td>
+                          <td halign='left'>RTV_SHIP_CARTON</td>
+                          <td halign='left'>WEIGHT</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The weight of the container</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>package_weight_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unit of measure of the package weight.</td>
+                          <td halign='left'>RTV_SHIP_CARTON</td>
+                          <td halign='left'>WEIGHT_UOM</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The UOM of the container</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tracking_number</td>
+                          <td halign='left'>varchar2128</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Tracking number assigned to the container by the carrier.</td>
+                          <td halign='left'>RTV_SHIP_CARTON</td>
+                          <td halign='left'>TRACKING_NUMBER</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>128</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The Tracking number for the container</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>package_type</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Package type of the container. This defines the general size of the package.</td>
+                          <td halign='left'>SHIPMENT_CARTON_DIM</td>
+                          <td halign='left'>DESCRIPTION</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The shipment container dimension description</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrVnsNote</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrVnsNote' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrVnsNote in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>note</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Note associated to the vendor shipment.</td>
+                          <td halign='left'>NOTES</td>
+                          <td halign='left'>TEXT</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>2000</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The note's text.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:StrCustAttDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='StrCustAttDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for StrCustAttDesc in SIM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>SIM's Table Name</th>
+                          <th align='left'>SIM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>SIM's Column Length</th>
+                          <th align='left'>Is Column Required in SIM's API?</th>
+                          <th align='left'>SIM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>label</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute label.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_text</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_decimal</td>
+                          <td halign='left'>number18_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the decimal value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_long</td>
+                          <td halign='left'>number18</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the long value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>admin_id</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The unique identifier for the attribute admin record. If not present, indicates a display only non-editable value.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

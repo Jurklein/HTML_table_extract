@@ -1,0 +1,2379 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Warehouse Management System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Warehouse Management System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/SODesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.3</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#SODesc'>
+                        <font>SODesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#SODtlDesc'>
+                          <font>SODtlDesc</font>
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <a href='#SODtlTcktDesc'>
+                            <font>SODtlTcktDesc</font>
+                          </a>
+                        </li>
+                      </ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:SODesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='SODesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for SODesc in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>mapped to DO_CTL_INV.ID_ICD as well.Not Yet Available</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A number which uniquely identifies a distribution order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>document_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>document_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Valid Document Type - If Null sent then populated with 'D'</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dc_dest_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>mapped to DO_CTL_INV.ID_PRTY_TO_ICD as well. Not Yet Available</td>
+                          <td halign='left'>transshipment_setup</td>
+                          <td halign='left'>dc_dest_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Type of location in the dc_dest_id field.  Valid values are: S = Store, W = Warehouse, E = Finisher.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the store type of the dc_dest_id store. Only populated if loc_type is 'S'.
+                           Valid values are: 'C' = company store, 'F' = franchise store.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stockholding_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if the dc_dest_id store is stockholding or not. Only populated if loc_type is 'S'.
+                           Valid values are: 'Y' = yes, 'N' = no.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_type</td>
+                          <td halign='left'>varchar29</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>9</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Default = 'MANUAL'</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pick_not_before_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not Yet Available</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>pick_not_before_date</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The earliest date on which the order may be picked.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pick_not_after_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Not Yet Available</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>pick_not_after_date</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The last date on which an order may be picked.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>priority</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>priority</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A value which indicates the priority of an allocation.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>event_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>event_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Identifies an event.  Downloaded with a distribution to be printed on associated merchandise labels.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>event_description</td>
+                          <td halign='left'>varchar21000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>event_description</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1000</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Describes an event.  Downloaded with a distribution to be printed on all associated merchandise labels.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_code</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>carrier_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A code which uniquely identifies a carrier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carrier_service_code</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>carrier_service_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Carrier's Service codes for the method of delivery, First Class, ground, etc.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>route</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>route</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Destination delivery route used in carrier_service_route</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address_desc</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_address_desc</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Generic description, could include customer name or specific shipping instructions.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_address1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Ship address for a single destination order, a specific address for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_address2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Ship address for a single destination order, a specific address for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address3</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_address3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A third line for shipping address information</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address4</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_address4</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A fourth line for shipping address information.This field is not currently supported in RWMS base code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_address5</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_address5</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A fifth line for shipping address information.This field is not currently supported in RWMS base code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_city</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>City of the ship destination.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_state</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>State where the shipment is sent</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_zip</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_zip</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>zip code of the region where the shipment is sent ( defined in VARCHAR2 to include Canada)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_country_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Country code of destination</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_address_desc</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_address_description</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Fields used in the Stock_Order table used by MMS system</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_address1</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_address1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Fields used in the Stock_Order table used by MMS system</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_address2</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_address2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Fields used in the Stock_Order table used by MMS system</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_address3</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_address3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Fields used in the Stock_Order table used by MMS system</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_address4</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_address4</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Fields used in the Stock_Order table used by MMS system</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_address5</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_address5</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>240</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Fields used in the Stock_Order table used by MMS system</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_city</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_city</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Billing City as part of the Billing Address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_state</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_state</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Billing State as part of the Billing Address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_zip</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_zip</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Billing Zip Code as part of the Billing Address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_country_id</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_country_code</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Billing Country Code as part of the Billing Address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>break_by_distro</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>break_by_distro</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Control the mixing of orders (distros) in a container. Downloaded in the Stock Order.  Values Y/N</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>rollback_allocation</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>rollback_allocation</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Indicates whether or not to rollback the allocation on cancel of pick</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cartonization</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>cartonization</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order Cartonization Indicator. Default is N</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>consumer_direct</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>consumer_direct</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Consumer Direct Order Indicator</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>message</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>message</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>300</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Text Message</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>chute_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>chute_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Type Definition of a Sorter Chute</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>po_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>po_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Unique Purchase Order identifier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>parent_customer_order</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>parent_customer_order</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Unique identifier for orignal order number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_line_costs</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_line_costs</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>container_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>container_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Type of the container, used to supply default container dimensions.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount1</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>amount1</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order / Line Amount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount2</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>amount2</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Order / Line Amount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount3</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>amount3</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order / Line Amount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount4</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>amount4</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order / Line Amount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount5</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>amount5</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order / Line Amount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount6</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>amount6</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Order / Line Amount</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sub_total</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>sub_total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>gift_cost_total</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>gift_cost_total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Total Cost for Gift Item.This field is not currently supported in RWMS base code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promotion_total</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>promotion_total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Pack slip information.This field is not currently supported in RWMS base code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_total</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>tax_total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>shipping_total</td>
+                          <td halign='left'>number12</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>shipping_total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda1</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda2</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda3</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda4</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda4</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda5</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda5</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda6</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda6</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda7</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda7</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda8</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda8</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda9</td>
+                          <td halign='left'>varchar260</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda9</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>60</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_uda10</td>
+                          <td halign='left'>varchar260</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_uda10</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>60</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dl_comment</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>dl_comment</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Comment attached to a download.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SODtlDesc'>
+                              <font color='red'>SODtlDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>not_after_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>distro_parent_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>exp_dc_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>approval_id</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>approval_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_loc_tsf_entity</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_loc_tsf_entity</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>inv_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>so_status</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>context_type</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field holds the functional area code to which the transfer relates to. Valid values are PROM and REPAIR.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>order_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>9</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Populated with MANUAL unless REPAIR is sent then populated with REPAIR</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>context_value</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field holds the value relating to the context type like Promotion number.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_slot_id</td>
+                          <td halign='left'>varchar215</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Delivery Slot Id.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>delivery_slot_id</td>
+                          <td halign='left'>RIB</td>
+                          <td halign='left'>15</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Delivery Slot ID</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>delivery_slot_desc</td>
+                          <td halign='left'>varchar2240</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Delivery slot description.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>cust_order_nbr</td>
+                          <td halign='left'>varchar248</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the customer order number reference for the transfer as provided by OMS.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>cust_order_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>48</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>Valid Customer Order Number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>fulfill_order_nbr</td>
+                          <td halign='left'>varchar248</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the fulfillment order number for the transfer as provided by OMS.
+                            One or more fulfillment orders could relate back to a single customer order in OMS.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>fulfill_order_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>48</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>For Consumer Direct orders, this number will be part of the order publish/consume. For non-Consumer Direct orders this number will default to the distro number.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>partial_delivery_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if the customer order can be picked and shipped 
+                            partially (Y) or if it should be shipped only when complete (N). This will be mapped 
+                            to the PICK_COMPLETE indicator in RWMS.  A value of Y for PARTIAL_DELIVERY_IND will 
+                            correspond to the value N for PICK_COMPLETE.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>pick_complete</td>
+                          <td halign='left'>RIB</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Reverse value - If N is received then populate with Y otherwise populate with N.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>consumer_delivery_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the desired date the delivery is required by the customer.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>cd_delivery_date</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used by the MMS system to determine the container shipper/route.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>consumer_delivery_time</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the desired time the delivery is required by the customer.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>cd_delivery_time</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used by the MMS system to determine the container shipper/route.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_first_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the first name for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_first_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>First Name used for a single destination order, a specific First Name for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_phonetic_first</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic first name for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_phonetic_first</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Phonetic First Name used for a single destination order, a specific Phonetic First Name for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_last_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the last name for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_last_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Last Name used for a single destination order, a specific Last Name for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_phonetic_last</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic last name for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_phonetic_last</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Last Name used for a single destination order, a specific Last Name for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_preferred_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the preferred name for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_preferred_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Preferred Name used for a single destination order, a specific Preferred Name for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_company_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the company name for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_company_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Company Name used for a single destination order, a specific Company Name for a customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_county</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the county name for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_county</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>county of ship destination</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ship_phone</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phone number for the delivery address on consumer-direct transfers.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>ship_phone</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>phone no of ship destination</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_first_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the first name for the billing address on consumer-direct transfers 
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_first_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used for printing of the Packing Slip.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_phonetic_first</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic first name for the billing address on consumer-direct transfers 
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_phonetic_first</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used for printing of the Packing Slip.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_last_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the last name for the billing address on consumer-direct transfers 
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_last_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used for printing of the Packing Slip.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_phonetic_last</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the phonetic last name for the billing address on consumer-direct transfers 
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_phonetic_last</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used for printing of the Packing Slip.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_preferred_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the preferred name for the billing address on consumer-direct transfers 
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_preferred_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used for printing of the Packing Slip.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_company_name</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the company name for the billing address on consumer-direct transfers 
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_company_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This data may be used for printing of the Packing Slip.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_phone</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the billing address phone number for customer-direct transfers  
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_phone</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Billing Phone no as part of billing address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bill_county</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the county name for the billing address on consumer-direct transfers 
+                            for inclusion on the packing slip.</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>bill_county</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>250</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Billing County as part of billing address</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:SODtlDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='SODtlDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for SODtlDesc in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dest_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>mapped to TR_LTM_ICD_MR.ID_STR_RT as well, Not Yet Available</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>dest_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A number which uniquely identifies a destination to which the DC delivers goods</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Type of location in the dest_id field.  Valid values are: S = Store, W = Warehouse, E = Finisher.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the store type of the dest_id store. Only populated if loc_type is 'S'.
+                           Valid values are: 'C' = company store, 'F' = franchise store.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>stockholding_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates if the dest_id store is stockholding or not. Only populated if loc_type is 'S'.
+                           Valid values are: 'Y' = yes, 'N' = no.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>mapped to TR_LTM_ICD_MR.ID_ITM as well. Not Yet Available</td>
+                          <td halign='left'>stock_allocation and component_ticketing</td>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Uniquely identifies the item.  May consist of some combination of SKU, style, color, size, etc.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>requested_unit_qty</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>mapped to TR_LTM_ICD_MR.QU_ITM as well.Not Yet Available</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>requested_unit_qty</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>The unit quantity of merchandise items requested for purchase or distribution.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>retail_price</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation and component_ticketing</td>
+                          <td halign='left'>retail_price</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The retail selling price for a particular item allocated to a particular store</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>selling_uom</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Unit of measure the item is sold at</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>ticket_type</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>ticket_type</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>A code that indicates the merchandise ticketing format. (Values defined in customer-generated documentation).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>priority</td>
+                          <td halign='left'>number4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_order</td>
+                          <td halign='left'>priority</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>A value which indicates the priority of an allocation.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>store_ord_mult</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>store_ord_mult</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Factor by which the units may be ordered in. Default is E</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>expedite_flag</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>expedite_flag</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Use in rush shipments, Values (Y/N);  If flag is Yes then the expedite carrier will be used</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_line_nbr</td>
+                          <td halign='left'>number3</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation_cid</td>
+                          <td halign='left'>order_line_nbr</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>3</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Derived as ROWNUM.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount1</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>amount1</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount2</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>amount2</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount3</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>amount3</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>8</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount4</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>amount4</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount5</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>amount5</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>amount6</td>
+                          <td halign='left'>number16_2</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>amount6</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>16</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_percent</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>tax_percent</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_status</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>item_status</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>component_ticketing_distro_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>n/a</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>in_store_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>in_store_date</td>
+                          <td halign='left'>RIBDate</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>In Store Date of the item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>total</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>gift_cost</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>gift_cost</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Cost for Gift Item.This field is not currently supported in RWMS base code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>shipping</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>shipping</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>promotion</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>promotion</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Textual description of event associated to the order</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>sub_total</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>sub_total</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>tax</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>*</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_detail_uda1</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>order_detail_uda1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock allocation</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_detail_uda2</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>order_detail_uda2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock allocation</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_detail_uda3</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>order_detail_uda3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock allocation</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_detail_uda4</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>order_detail_uda4</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock allocation</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>order_detail_uda5</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>stock_allocation</td>
+                          <td halign='left'>order_detail_uda5</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>User defined attributes of the stock allocation</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>transaction_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the original transaction unit of measure to 
+                            be passed on to the store system. It is only used for customer direct 
+                            orders coming from the order management system. All quantities on the 
+                            payload are expressed in items standard unit of measure.</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#SODtlTcktDesc'>
+                              <font color='red'>SODtlTcktDesc</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>comments</td>
+                          <td halign='left'>varchar22000</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Any comments associated with the stock order line item.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:SODtlTcktDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='SODtlTcktDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for SODtlTcktDesc in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar212</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>component_ticketing</td>
+                          <td halign='left'>distro_nbr</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>12</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A number which uniquely identifies a distribution order.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>document_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Not used in RWMS</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>component_ticketing</td>
+                          <td halign='left'>item_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Id of the master item kit build from other items</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>dest_id</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>component_ticketing</td>
+                          <td halign='left'>dest_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>A number which uniquely identifies a destination to which the DC delivers goods</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>component_item_id</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>component_ticketing</td>
+                          <td halign='left'>component_item_id</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Item Identifier of the Item in a kit.  Downloaded in the Bill of Materials Download.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>retail_price</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>component_ticketing</td>
+                          <td halign='left'>retail_price</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>20</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The retail selling price for a particular item allocated to a particular store</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>component_ticketing</td>
+                          <td halign='left'>selling_uom</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Unit of measure the item is sold at</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RWMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RWMS's Table Name</th>
+                          <th align='left'>RWMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RWMS's Column Length</th>
+                          <th align='left'>Is Column Required in RWMS's API?</th>
+                          <th align='left'>RWMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

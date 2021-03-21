@@ -1,0 +1,477 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/ItemSupDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#ItemSupDesc'>
+                        <font>ItemSupDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#CustFlexAttriVo'>
+                          <font>CustFlexAttriVo</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:ItemSupDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='ItemSupDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for ItemSupDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier for the item.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Alphanumeric value that identifies the item</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supplier</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier for the supplier.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>supplier</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>10,0</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This field contains the number of the supplier of the item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_supp_ind</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates whether this supplier is the primary supplier for the item. An item can have one and only one primary supplier.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>primary_supp_ind</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This field Indicates whether this supplier is the primary supplier for the item..  Each item can have one and only one primary supplier.  Valid values are Y or N.  This field is meaningless for sub-transaction level items.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>vpn</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the Vendor Product Number for the Item.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>vpn</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field contains the Vendor Product Number associated with this item.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_label</td>
+                          <td halign='left'>varchar215</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the supplier label. It will only be popluated if item is a style.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>supp_label</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>15</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field will hold the supplier label for an item (Parent/Child)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>consignment_rate</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the consignment rate for this item for the supplier.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>consignment_rate</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>12,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field contains the consignment rate for this item for the supplier.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_diff_1</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the first supplier differentiator and/or description. This field may only contain a value for items with an item_parent.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>supp_diff_1</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field contains the first supplier differentiator and/or description.  This field may only contain a value for items with an item_parent.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_diff_2</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the second supplier differentiator and/or description. This field may only contain a value for items with an item_parent.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>supp_diff_2</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field contains the second supplier differentiator and/or description.  This field may only contain a value for items with an item_parent.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_diff_3</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the third supplier differentiator and/or description. This field may only contain a value for items with an item_parent.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>supp_diff_3</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field contains the third supplier differentiator and/or description.  This field may only contain a value for items with an item_parent.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_diff_4</td>
+                          <td halign='left'>varchar2120</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the fourth supplier differentiator and/or description. This field may only contain a value for items with an item_parent.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>supp_diff_4</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>120</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field contains the fourth supplier differentiator and/or description.  This field may only contain a value for items with an item_parent.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>pallet_name</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Code referencing the name used to refer to the pallet.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>pallet_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Code referencing the name used by supplier to refer to the pallet.  Valid codes are defined in the PALN code type.  Examples are flat, pallet.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>case_name</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Code referencing the name used to refer to the case.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>case_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Code referencing the name used by supplier to refer to the case.  Valid codes are defined in the CASN code type.  Examples are pack, box, bag.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>inner_name</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Code referencing the name used to refer to the inner.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>inner_name</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Code referencing the name used by supplier to refer to the inner.  Valid codes are defined in the INRN code type.  Examples are sub-case, sub-pack.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>supp_discontinue_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Date when the supplier discontinues an item.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>supp_discontinue_date</td>
+                          <td halign='left'>date</td>
+                          <td halign='left'>*</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Date which the supplier discontinues an item.  The retailor should be aware that the supplier is able to reuse a UPC after 30 months and should work to ensure that no data exists in RMS for a UPC 30 months after it has been discontinued.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>direct_ship_ind</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>A value of 'Y'es in this field indicates that any item associated with this supplier is eligible for a direct shipment from the supplier to the customer.</td>
+                          <td halign='left'>item_supplier</td>
+                          <td halign='left'>direct_ship_ind</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This field will  contain a value of Yes to indicate that any item asssociated with this supplier is eligible for a direct shipment from the supplier to the customer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#CustFlexAttriVo'>
+                              <font color='red'>CustFlexAttriVo:CustFlexAttriVo</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>0</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>References a collection of customer flexible attributes.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>NA</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>primary_case_size</td>
+                          <td halign='left'>varchar26</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field indicates the primary case size for the item supplier when an orderable item is configured for informal case types. Used only if AIP is interfaced.</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                          <td halign='left'>NA</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:CustFlexAttriVo</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='CustFlexAttriVo' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for CustFlexAttriVo in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>name</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the attribute name.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicates the name of the column defined the Group Set view for the transfer header.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the numeric or string value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a number or character type attribute, this will be the value of that attribute for the transfer.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>value_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the date value of the attribute.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>Not applicable.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>If the flex attribute is a date type attribute, this will hold the date value that applies for the transfer.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

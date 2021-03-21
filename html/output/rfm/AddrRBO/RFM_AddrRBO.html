@@ -1,0 +1,524 @@
+<html>
+ <head>
+  <title>
+   RFM_AddrRBO
+  </title>
+ </head>
+ <body>
+  <table border="1" cellpadding="3" cellspacing="0" data-name="AddrRBO" width="100%">
+   <thead data-theadtype="xsd_thead_type">
+    <tr bgcolor="#D0D0D0">
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Name
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Data Type
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Min Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Max Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Description
+     </th>
+     <th align="left" colspan="6">
+      Application: RFM
+     </th>
+    </tr>
+    <tr bgcolor="#B0C4DE">
+     <th align="left">
+      Table
+     </th>
+     <th align="left">
+      Column Name
+     </th>
+     <th align="left">
+      Data Type
+     </th>
+     <th align="left">
+      Data Length
+     </th>
+     <th align="left">
+      Column Required?
+     </th>
+     <th align="left">
+      Application Description
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td halign="left">
+      city_id
+     </td>
+     <td halign="left">
+      varchar210
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the City Id or Code.
+     </td>
+     <td halign="left">
+      country_tax_jurisdiction
+     </td>
+     <td halign="left">
+      jurisdiction_code
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      10
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the city's jurisdiction code used for tax calculation.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      state_name
+     </td>
+     <td halign="left">
+      varchar2120
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the State name.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No mapping in RMS. Default to NULL.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      country_name
+     </td>
+     <td halign="left">
+      varchar2120
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the Country Name. For e.g Brazil,United States
+     </td>
+     <td halign="left">
+      COUNTRY
+     </td>
+     <td halign="left">
+      COUNTRY_DESC
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      120
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the name of the country.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      addr
+     </td>
+     <td halign="left">
+      number11
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Description is not 
+							available.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No mapping in RMS. Default to NULL.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      addr_type
+     </td>
+     <td halign="left">
+      varchar22
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates the type for the 
+							address. Valid values (e.g. 01-business, 02-postal) 
+							are in the add_type table.
+     </td>
+     <td halign="left">
+      ADDR
+     </td>
+     <td halign="left">
+      ADDR_TYPE
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      2
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the address type. Valid address types are defined in ADD_TYPE table in RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      primary_addr_type_ind
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Description is not 
+							available.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No mapping in RMS. Default to '1'.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      primary_addr_ind
+     </td>
+     <td halign="left">
+      varchar21
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Indicates whether this address 
+							is the primary address for this address 
+							type
+     </td>
+     <td halign="left">
+      ADDR
+     </td>
+     <td halign="left">
+      PRIMARY_ADDR_IND
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Indicates if the address is a primary address.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      add_1
+     </td>
+     <td halign="left">
+      varchar2240
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Description is not 
+							available.
+     </td>
+     <td halign="left">
+      ADDR
+     </td>
+     <td halign="left">
+      ADD_1
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      240
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the first line of the address.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      add_2
+     </td>
+     <td halign="left">
+      varchar2240
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Description is not 
+							available.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No mapping in RMS. Default to NULL.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      add_3
+     </td>
+     <td halign="left">
+      varchar2240
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Description is not 
+							available.
+     </td>
+     <td halign="left">
+      Fill application table name.
+     </td>
+     <td halign="left">
+      Fill table column name.
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      Fill column length.
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      No mapping in RMS. Default to NULL.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      city
+     </td>
+     <td halign="left">
+      varchar2120
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Description is not 
+							available.
+     </td>
+     <td halign="left">
+      country_tax_jurisdiction
+     </td>
+     <td halign="left">
+      JURISDICTION_DESC
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      120
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the name of the city or name of the tax jurisdiction for tax calculation.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      state
+     </td>
+     <td halign="left">
+      varchar23
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains the postal 
+							abbreviation for the state in which the warehouse 
+							is located.
+     </td>
+     <td halign="left">
+      ADDR
+     </td>
+     <td halign="left">
+      STATE
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      3
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Constains the postal abbreviation for the state.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      country_id
+     </td>
+     <td halign="left">
+      varchar23
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Description is not 
+							available.
+     </td>
+     <td halign="left">
+      ADDR
+     </td>
+     <td halign="left">
+      country_id
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      3
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the country code of the address.
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+

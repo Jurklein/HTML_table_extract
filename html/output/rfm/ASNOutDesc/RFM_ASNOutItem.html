@@ -1,0 +1,704 @@
+<html>
+ <head>
+  <title>
+   RFM_ASNOutItem
+  </title>
+ </head>
+ <body>
+  <table border="1" cellpadding="3" cellspacing="0" data-name="ASNOutItem" width="100%">
+   <thead data-theadtype="xsd_thead_type">
+    <tr bgcolor="#D0D0D0">
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Name
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Data Type
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Min Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Max Occurs
+     </th>
+     <th align="left" rowspan="2" valign="BOTTOM">
+      Element Description
+     </th>
+     <th align="left" colspan="6">
+      Application: RFM
+     </th>
+    </tr>
+    <tr bgcolor="#B0C4DE">
+     <th align="left">
+      Table
+     </th>
+     <th align="left">
+      Column Name
+     </th>
+     <th align="left">
+      Data Type
+     </th>
+     <th align="left">
+      Data Length
+     </th>
+     <th align="left">
+      Column Required?
+     </th>
+     <th align="left">
+      Application Description
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td halign="left">
+      item_id
+     </td>
+     <td halign="left">
+      varchar225
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Unique identifier for the item.
+     </td>
+     <td halign="left">
+      shipsku
+     </td>
+     <td halign="left">
+      item
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      25
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Unique identifier for the item.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      unit_qty
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains the number of items expected to be received based on the supplier's advance shipment notification for this item/shipment combination.
+     </td>
+     <td halign="left">
+      shipsku
+     </td>
+     <td halign="left">
+      qty_expected
+     </td>
+     <td halign="left">
+      number
+     </td>
+     <td halign="left">
+      12
+     </td>
+     <td halign="left">
+      Yes
+     </td>
+     <td halign="left">
+      Contains the number of items expected to be received based on the supplier's advance shipment notification for this item/shipment combination.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      gross_cost
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains the gross cost.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      priority_level
+     </td>
+     <td halign="left">
+      number1
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      order_line_nbr
+     </td>
+     <td halign="left">
+      number10
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Is used to carry the customer order line number value for customer orders. Is a derived value for non-customer orders.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      lot_nbr
+     </td>
+     <td halign="left">
+      varchar220
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      final_location
+     </td>
+     <td halign="left">
+      varchar210
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      from_disposition
+     </td>
+     <td halign="left">
+      varchar24
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This value is used to determine if the inventory is available or unavailable, based on the code's INV_STATUS value on the INV_STATUS_CODES table.
+     </td>
+     <td halign="left">
+      inv_status_codes
+     </td>
+     <td halign="left">
+      inv_status_code
+     </td>
+     <td halign="left">
+      varchar2
+     </td>
+     <td halign="left">
+      4
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      This value is used to determine if the inventory is available or unavailable, based on the code's INV_STATUS value on the INV_STATUS_CODES table.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      to_disposition
+     </td>
+     <td halign="left">
+      varchar24
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      voucher_number
+     </td>
+     <td halign="left">
+      varchar216
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains the voucher number.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      voucher_expiration_date
+     </td>
+     <td halign="left">
+      xs:dateTime
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      container_qty
+     </td>
+     <td halign="left">
+      number6
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      comments
+     </td>
+     <td halign="left">
+      varchar22000
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains any comment about the item in the shipment.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      unit_cost
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Contains the unit cost of the item in the shipment.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      base_cost
+     </td>
+     <td halign="left">
+      number20_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      This value will be used to get the base cost (BC) from RFM for a transfer, which will flow into RMS.
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      n/a
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Not used by RMS.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      weight
+     </td>
+     <td halign="left">
+      number12_4
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Actual weight shipped.
+     </td>
+     <td halign="left">
+      shipsku
+     </td>
+     <td halign="left">
+      weight_expected
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Actual weight shipped.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      weight_uom
+     </td>
+     <td halign="left">
+      varchar24
+     </td>
+     <td halign="left">
+      0
+     </td>
+     <td halign="left">
+      1
+     </td>
+     <td halign="left">
+      Unit of measurement for weight (e.g. pounds, kilograms) shipped.
+     </td>
+     <td halign="left">
+      shipsku
+     </td>
+     <td halign="left">
+      weight_expected_uom
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      null
+     </td>
+     <td halign="left">
+      No
+     </td>
+     <td halign="left">
+      Unit of measurement for weight (e.g. pounds, kilograms) shipped.
+     </td>
+    </tr>
+    <tr>
+     <td halign="left">
+      <a href="#ASNOutUIN">
+       <font color="red">
+        ASNOutUIN
+       </font>
+      </a>
+     </td>
+     <td halign="left">
+      <font color="red" style="italic">
+       *
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       0
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       unbounded
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+       Collection of Universal Identification Numbers.
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+     <td halign="left">
+      <font color="red">
+      </font>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+

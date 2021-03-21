@@ -1,0 +1,204 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/RcptAdjustDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#RcptAdjustDesc'>
+                        <font>RcptAdjustDesc</font>
+                      </a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:RcptAdjustDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='RcptAdjustDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for RcptAdjustDesc in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>bol_nbr</td>
+                          <td halign='left'>varchar230</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This column will hold the bill of lading number associated with a shipment.</td>
+                          <td halign='left'>shipment</td>
+                          <td halign='left'>bol_nbr</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This column contains the bill of lading number associated with a shipment.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>carton</td>
+                          <td halign='left'>varchar220</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Identifies the UCC-128 carton number for shipments originating from the Advance Shipment Notification process as carton shipments. This field will be zero for all shipments that are not at a carton level.</td>
+                          <td halign='left'>shipsku</td>
+                          <td halign='left'>carton</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Identifies the UCC-128 carton number for shipments originating from the Advance Shipment Notification process as carton shipments. This field will be zero for all shipments that are not at a carton level.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>from_location</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>For transfer and allocation shipments, this field will hold the location from which the shipment was sourced.</td>
+                          <td halign='left'>shipment</td>
+                          <td halign='left'>from_loc</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>For transfer and allocation shipments, this field will contains the location from which the shipment was sourced.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>to_location</td>
+                          <td halign='left'>varchar210</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the location that the shipment will be delivered to.</td>
+                          <td halign='left'>shipment</td>
+                          <td halign='left'>to_loc</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>This field contains the location to which the shipment will be delivered.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>receipt_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the date the stock order is received.</td>
+                          <td halign='left'>shipment</td>
+                          <td halign='left'>receive_date</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>This field contains the date on which the stock order is received.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

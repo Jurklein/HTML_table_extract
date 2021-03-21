@@ -1,0 +1,412 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Price Management)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Price Management</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/RegPrcChgDesc/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>This is root element of this document which contains name space definitions for the document elements.</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#RegPrcChgDesc'>
+                        <font>RegPrcChgDesc</font>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <a href='#RegPrcChgDtl'>
+                          <font>RegPrcChgDtl</font>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:RegPrcChgDesc</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='RegPrcChgDesc' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for RegPrcChgDesc in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>location</td>
+                          <td halign='left'>number10</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Unique identifier that indicates a Location (Store or Warehouse)</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>location</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Unique identifier that indicates a Location (Store or Warehouse)</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>loc_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates the type of location which has requested tickets. Valid values for this field are: 'W' (for warehouse) and 'S' (for store).</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>location_type</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>30</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Identifier that indicates whether a location is a Store ('S') or a Warehouse ('W')</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>
+                            <a href='#RegPrcChgDtl'>
+                              <font color='red'>RegPrcChgDtl</font>
+                            </a>
+                          </td>
+                          <td halign='left'>
+                            <font color='red' style='italic'>*</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>1</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>unbounded</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'>Description is not available.</font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                          <td halign='left'>
+                            <font color='red'></font>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:RegPrcChgDtl</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='RegPrcChgDtl' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for RegPrcChgDtl in RPM application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RPM's Table Name</th>
+                          <th align='left'>RPM's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RPM's Column Length</th>
+                          <th align='left'>Is Column Required in RPM's API?</th>
+                          <th align='left'>RPM's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>price_change_id</td>
+                          <td halign='left'>number15</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the ID of the price change that initiated the ticket request.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>price_change_id</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>15</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Price Change Id</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>item</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Alphanumeric value that identifies the item for which tickets have been requested.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>item</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Item number</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>effective_date</td>
+                          <td halign='left'>xs:dateTime</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Price Change Effective Date</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>effective_date</td>
+                          <td halign='left'>DATE</td>
+                          <td halign='left'>null</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Price Change Effective Date</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_retail_changed_ind</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether the selling retail price has been changed.  Valid values are '0' - no change or '1' - retail is changed.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>selling_unit_change_ind</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicate whether the regular selling retail is change by the Price Change</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_unit_retail</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the unit retail for the item at the indicated location.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>selling_retail</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Regular selling retail</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Holds the selling unit of measure for an item's single-unit retail.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>selling_retail_uom</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Regular Selling UOM</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>selling_currency</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the currency code that should match the store's or warehouse's currency code.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>selling_retail currency</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Regular Selling Retail Currency</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_unit_changed_ind</td>
+                          <td halign='left'>number1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Indicates whether the retail for multi units has been changed. Valid values are '0' - no change or '1' - retail is changed.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>multi_unit_changed_ind</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Indicate whether the Multi Unit Selling Retail is changed by the Price Change</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_units</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>The number that indicate how many item is priced in the multi unit selling retail</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>multi_units</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>18, 4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>The number that indicate how many item is priced in the multi unit selling retail</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_unit_retail</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>This field contains the multi-unit retail for the item at the indicated location.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>multi_units_retail</td>
+                          <td halign='left'>NUMBER</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Multi Unit Selling Retail</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_unit_retail_currency</td>
+                          <td halign='left'>varchar23</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Contains the currency code that should match the store's or warehouse's currency code.</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>multi_units_currency</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Multi Unit Retail Currency</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>multi_selling_uom</td>
+                          <td halign='left'>varchar24</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Multi Unit Selling UOM</td>
+                          <td halign='left'>rpm_price_chg_payload</td>
+                          <td halign='left'>multi_units_uom</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>25</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Multi Unit Selling UOM</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

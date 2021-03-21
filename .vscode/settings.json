@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Users\\ljdasilv\\AppData\\Local\\Programs\\Python\\Python39",
+    "python.autoComplete.extraPaths": [
+        "C:\\Users\\ljdasilv\\Documents\\DBMS\\HTML_table_extract"
+    ],
+    "python.analysis.extraPaths": [
+        "C:\\Users\\ljdasilv\\Documents\\DBMS\\HTML_table_extract"
+    ],
+}

@@ -1,0 +1,362 @@
+<html>
+  <head>
+    <title>Retail Integration Mappings Report Release:19.0.000</title>
+  </head>
+  <body>
+    <a name='top' />
+    <table>
+      <tr>
+        <td>
+          <img src='../../image/oracle-logo-512.gif' height='14' border='0' />
+        </td>
+        <td>
+          <font color='#336699' size='4'>Retail Integration Mappings Report        Release:19.0.000</font>
+        </td>
+        <td>
+          <font color='#336699' size='3'>(Retail Merchandising System)</font>
+        </td>
+      </tr>
+    </table>
+    <table width='100%'>
+      <tr>
+        <td bgcolor='#336699' width='100%' height='14' />
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <tr>
+          <td>
+            <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5' strong='bold'>Application</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>Retail Merchandising System</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Target Name Space</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>http://www.oracle.com/retail/integration/base/bo/TaxDetRBO/v1</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Version</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>1.0</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>Description</font>
+                  </strong>
+                </td>
+                <td>
+                  <font color='#336699' size='3'>
+			This is the root element of this document which
+			contains name
+			space definitions for the document elements.
+		</font>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor='#D0D0D0'>
+                  <strong>
+                    <font color='#336699' size='5'>XSD Structure</font>
+                  </strong>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href='#TaxDetRBO'>
+                        <font>TaxDetRBO</font>
+                      </a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th align='left'>
+                  <font color='#336699' size='4'>XML-Schema Name:TaxDetRBO</font>
+                </th>
+                <th align='left'>
+                  <font color='#336699' size='4'>Version:19.0.000</font>
+                </th>
+                <th align='right'>
+                  <a href='#top'>
+                    <font color='#336699' size='2'>Return to Top</font>
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  <a name='TaxDetRBO' />
+                  <table BORDER='1' WIDTH='100%' CELLPADDING='3' CELLSPACING='0'>
+                    <tbody>
+                      <tr>
+                        <tr bgcolor='#D0D0D0'>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Name</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Data Type</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Min Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Max Occurs</th>
+                          <th rowspan='2' align='left' valign='BOTTOM'>XSD Element Description</th>
+                          <th colspan='6' align='left'>Mapping for TaxDetRBO in RMS application.</th>
+                        </tr>
+                        <tr bgcolor='#B0C4DE'>
+                          <th align='left'>RMS's Table Name</th>
+                          <th align='left'>RMS's Column Name</th>
+                          <th align='left'>Integration API(RIB or/and RSB or/and BDI)</th>
+                          <th align='left'>RMS's Column Length</th>
+                          <th align='left'>Is Column Required in RMS's API?</th>
+                          <th align='left'>RMS's API Description</th>
+                        </tr>
+                        <tr>
+                          <td halign='left'>legal_message</td>
+                          <td halign='left'>varchar2250</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the legal message associated to the tax detail.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RMS - no mapping.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax amount for an item.
+						</td>
+                          <td halign='left'>pos_mods_tax_info, gtax_item_rollup, ord_tax_breakup</td>
+                          <td halign='left'>estimated_tax_value, cum_tax_value, total_tax_amt</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the calculated tax amount. It's expected in Brazil currency ('BRL'). When calculating tax for a purchase order, it's mapped to ord_tax_breakup.total_tax_amt. When calculating tax for an item's unit retail, it's mapped to gtax_item_rollup.cum_tax_value and pos_mods_tax_info.estimated_tax_value. When calculating tax for an item's unit cost, it is used to derive the base_cost, negotiated_item_cost, extended_base_cost and inclusive_cost on ITEM_COST_HEAD, ITEM_SUPP_COUNTRY, ITEM_SUPP_COUNTRY_LOC.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax basis amount
+						</td>
+                          <td halign='left'>item_cost_detail, ord_tax_breakup, item_loc</td>
+                          <td halign='left'>applied_on, taxable_base, unit_retail</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains cost on which a particular tax should be applied. It's the item unit cost or unit retail or purchase order cost sent to the tax engine.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>modified_tax_basis_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax basis amount
+						</td>
+                          <td halign='left'>item_cost_detail, ord_tax_breakup</td>
+                          <td halign='left'>modified_taxable_base</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the cost on which the taxes are actually applied. It's expected in Brazil currency ('BRL').</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_tax_amount</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit tax amount.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RMS - no mapping.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>unit_tax_uom</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the unit of measure of the unit tax amount.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RMS - no mapping.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rate_type</td>
+                          <td halign='left'>varchar21</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rate type. Possible
+							Values are
+							P - Percentage
+							F - Fixed Value
+							A - Amount/Per Unit
+						</td>
+                          <td halign='left'>item_cost_detail, ord_tax_breakup</td>
+                          <td halign='left'>CALCULATION_BASIS, CALCULATION_BASIS</td>
+                          <td halign='left'>varchar2</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the tax rate type. Expected values are 'P'(percent) or 'V'(amount). When calculating tax for an item's unit retail, tax_rate_type is expected to 'P' (percent).</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_code</td>
+                          <td halign='left'>varchar225</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax code applied to an
+							item.
+						</td>
+                          <td halign='left'>pos_mods_tax_info, ord_tax_breakup</td>
+                          <td halign='left'>tax_code, tax_code,</td>
+                          <td halign='left'>VARCHAR2</td>
+                          <td halign='left'>6</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains tax code.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>tax_rate</td>
+                          <td halign='left'>number20_10</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the tax rate applied to an item.
+						</td>
+                          <td halign='left'>pos_mods_tax_info, ord_tax_breakup, item_cost_detail</td>
+                          <td halign='left'>tax_rate, tax_rate, comp_rate</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>20,10</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Contains the tax rate. Depending on the tax_rate_type, it can either be a percentage or a flat rate amount expressed in Brazil currency ('BRL').</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recoverable_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of recoverable tax
+							amount for an item.
+						</td>
+                          <td halign='left'>item_cost_detail, ord_tax_breakup</td>
+                          <td halign='left'>RECOVERABLE_AMOUNT</td>
+                          <td halign='left'>number</td>
+                          <td halign='left'>20,4</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Contains recoverable amount of tax applied on the item. It's expected in Brazil currency ('BRL').</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>recovered_amt</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of recovered tax
+							amount for an item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RMS - no mapping.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>reg_pct_margin_value</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of the regulated percent
+							margin value amount for an item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RMS - no mapping.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>regulated_price</td>
+                          <td halign='left'>number20_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							Indicates the value of regulated price
+							for an item.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>No</td>
+                          <td halign='left'>Not used in RMS - no mapping.</td>
+                        </tr>
+                        <tr>
+                          <td halign='left'>icms_redu_basis_rate</td>
+                          <td halign='left'>number12_4</td>
+                          <td halign='left'>0</td>
+                          <td halign='left'>1</td>
+                          <td halign='left'>
+							This field indicates the reduction basis rate.
+						</td>
+                          <td halign='left'>Fill application table name.</td>
+                          <td halign='left'>Fill table column name.</td>
+                          <td halign='left'>RIB or/and RSB </td>
+                          <td halign='left'>Fill column length.</td>
+                          <td halign='left'>Yes</td>
+                          <td halign='left'>Fill this description.</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <br />
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>
