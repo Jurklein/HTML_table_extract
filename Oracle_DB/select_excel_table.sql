@@ -1,1 +1,0 @@
-select * from table( as_read_xlsx.read( as_read_xlsx.file2blob( 'C:\\Users\\ljdasilv\\Documents\\DBMS\\HTML_table_extract\\', 'read_write.xlsx' ) ) );
