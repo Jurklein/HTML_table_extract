@@ -1,0 +1,8 @@
+
+*.xlsx
+*.html
+*.css
+testes_diversos*
+modelos*
+mapping_decorators*
+.log
